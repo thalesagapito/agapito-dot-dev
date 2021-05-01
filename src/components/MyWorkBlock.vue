@@ -10,10 +10,15 @@
         You can see below the different fields I've worked on and my experience in them:
         <ul>
           <li>
-            <strong class="prose-lg">
+            <strong class="list-title">
               Frontend:
+              <div class="icons">
+                <img src="/images/tech/vue.svg" alt="Vue logo.">
+                <img src="/images/tech/tailwind.svg" alt="TailwindCSS logo." class="py-0.5">
+                <img src="/images/tech/ts.svg" alt="TypeScript logo.">
+                <img src="/images/tech/jest.svg" alt="Jest logo.">
+              </div>
             </strong>
-            <br>
             Working primarily with
             <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-bold">Vue</a>
             <i> (both 2 and 3)</i>, I've structured complete frontends for multiple projects.
@@ -34,10 +39,14 @@
           <br>
 
           <li>
-            <strong class="prose-lg">
+            <strong class="list-title">
               Backend:
+              <div class="icons">
+                <img src="/images/tech/ts.svg" alt="TypeScript logo.">
+                <img src="/images/tech/gql.svg" alt="GraphQL logo.">
+                <img src="/images/tech/jest.svg" alt="Jest logo.">
+              </div>
             </strong>
-            <br>
             Working primarily with <strong>Node</strong> + <strong>TypeScript</strong>,
             I've structured complete <strong>REST</strong> and
             <a href="https://graphql.org" target="_blank" rel="noopener noreferrer">GraphQL</a>
@@ -60,10 +69,12 @@
           <br>
 
           <li>
-            <strong class="prose-lg">
+            <strong class="list-title">
               Devops:
+              <div class="icons">
+                <img src="/images/tech/aws.svg" alt="AWS logo.">
+              </div>
             </strong>
-            <br>
             I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,
             and have used varied services at multiple projects. Some of my favorite include <strong>Lambda functions</strong> for cheap and scalable code,
             <strong>Cloudfront CDN + S3</strong> for blazing fast static sites <i>(like the one you're in right now)</i> and
@@ -106,8 +117,20 @@ section {
     @apply w-full p-6 bg-white border-2 border-black font-mono;
     box-shadow: 6px 6px 0 theme('colors.gray.800');
 
+    .list-title {
+      @apply prose-lg flex justify-start items-center pb-1;
+
+      .icons {
+        @apply flex justify-start h-5 ml-2;
+        img {
+          @apply h-full my-0 mx-2;
+        }
+      }
+    }
+
     .asterisks {
-      @apply w-full py-2 text-center text-4xl font-bold font-mono tracking-widest;
+      @apply w-full py-2 text-center text-4xl font-bold font-mono tracking-widest
+      md:py-3;
     }
   }
 }

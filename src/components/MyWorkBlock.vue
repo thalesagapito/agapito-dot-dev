@@ -5,7 +5,7 @@
     </h2>
     <div class="box">
       <div class="prose prose-pink">
-        Even though I'm a <s>self-proclaimed</s> Frontend Developer, I have been known to work with varied technologies when needed.
+        Even though I'm a Frontend Developer, I have been known to work with varied technologies when needed.
         <br>
         You can see below the different fields I've worked on and my experience in them:
         <ul>
@@ -60,8 +60,8 @@
             Other experiences in the field include:
             <a href="https://prisma.io" target="_blank" rel="noopener noreferrer">Prisma ORM</a>,
             <strong>Unit Testing</strong> with
-            <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">Jest</a>,
-            creating a <strong>Web Scraper</strong>.
+            <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">Jest</a>
+            and creating a <strong>Web Scraper</strong>.
           </li>
 
           <li>
@@ -72,7 +72,7 @@
               </div>
             </strong>
             I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,
-            and have used varied services at multiple projects. Some of my favorite include <strong>Lambda functions</strong> for cheap and scalable code,
+            and have used varied services at multiple projects. Some of my favorites include <strong>Lambda functions</strong> for cheap and scalable code,
             <strong>Cloudfront CDN + S3</strong> for blazing fast static sites <i>(like the one you're in right now)</i> and
             <strong>DynamoDB/RDS</strong> for simple cloud-hosted databases.
           </li>

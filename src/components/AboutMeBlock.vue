@@ -7,13 +7,13 @@
       <p class="prose">
         I'm {{ currentAge }} years old and have been programming since I was 15.
         <br>
-        Back then, I loved the idea of creating my own game, which is what inspired me to keep learning.
+        Back then, I loved the idea of creating my own game, which inspired me to keep learning.
         <br>
         Nowadays, I have found many other fullfilling activities that keep me motivated.
         Still, <strong>programming is one of my favorite hobbies</strong>, as it's always challenging and lets me be creative with my work.
         <br>
         <br>
-        Some of my other interests are sneakers, fashion and rap music.
+        Some of my other interests are sneakers, photography and rap music.
       </p>
 
       <div class="interests">

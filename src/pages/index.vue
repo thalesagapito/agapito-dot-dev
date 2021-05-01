@@ -2,6 +2,7 @@
   <div class="wrapper">
     <title-block />
     <summary-block />
+    <about-me-block />
   </div>
 </template>
 

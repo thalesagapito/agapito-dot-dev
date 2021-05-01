@@ -22,6 +22,7 @@ export default defineConfig({
       'vue',
       'vue-router',
       '@vueuse/core',
+      '@vueuse/head',
     ],
   },
 

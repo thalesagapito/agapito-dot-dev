@@ -22,6 +22,7 @@ module.exports = {
       gray: colors.trueGray,
       red: colors.red,
       yellow: colors.amber,
+      orange: colors.orange,
       green: colors.emerald,
       blue: colors.blue,
       indigo: colors.indigo,
@@ -175,7 +176,16 @@ module.exports = {
       150: '1.5',
       200: '2',
     },
-    container: {},
+    container: {
+      center: true,
+      padding: {
+        'DEFAULT': '1rem',
+        'sm': '2rem',
+        'lg': '4rem',
+        'xl': '5rem',
+        '2xl': '6rem',
+      },
+    },
     cursor: {
       'auto': 'auto',
       'default': 'default',
@@ -960,5 +970,7 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

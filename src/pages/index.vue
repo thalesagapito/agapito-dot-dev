@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
-    <title-block></title-block>
+    <title-block />
+    <summary-block />
   </div>
 </template>
 

@@ -30,11 +30,14 @@ export default defineComponent({
 
 .title-block-wrapper {
   @apply flex justify-center items-center pt-28
-  sm:flex-row sm:space-x-6 sm:pt-16;
+  sm:flex-row sm:space-x-6 sm:pt-16
+  md:space-x-10 md:pt-12
+  lg:space-x-14;
 
   .image {
     @apply w-32 h-36 object-cover -mr-6 -mt-28 border-2 border-black
-    sm:w-36 sm:h-40 sm:mr-0 sm:mt-0;
+    sm:w-36 sm:h-40 sm:mr-0 sm:mt-0
+    md:w-40 md:h-44;
     box-shadow:   6px 6px 0 theme('colors.gray.800');
   }
 
@@ -44,11 +47,13 @@ export default defineComponent({
     text-shadow:   1px 3px 0 theme('colors.gray.800');
     .first {
       @apply text-5xl text-orange-300
-      sm:text-6xl;
+      sm:text-6xl
+      lg:text-7xl;
     }
     .last {
       @apply text-4xl text-red-300
-      sm:text-5xl;
+      sm:text-5xl
+      lg:text-6xl;
     }
   }
 

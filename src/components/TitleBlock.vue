@@ -1,7 +1,7 @@
 <template>
   <div class="title-block-wrapper">
     <img
-      src="https://images.unsplash.com/photo-1596215143922-eedeaba0d91c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      src="/images/me.jpeg"
       alt="A picture of myself. A curly haired black man wearing glasses."
       class="image"
     >

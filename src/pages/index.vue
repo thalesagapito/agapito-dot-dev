@@ -21,6 +21,6 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .wrapper {
-  @apply flex flex-col container;
+  @apply flex flex-col container pb-8;
 }
 </style>

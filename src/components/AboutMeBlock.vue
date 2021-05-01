@@ -49,7 +49,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 section {
-  @apply container max-w-prose my-4 px-0;
+  @apply w-full mx-auto max-w-prose my-4 md:my-6 lg:mb-8;
 
   .title {
     @apply font-mono text-right text-3xl font-bold underline italic mb-4 mr-4 text-gray-800

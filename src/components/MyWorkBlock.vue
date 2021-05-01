@@ -1,0 +1,114 @@
+<template>
+  <section>
+    <h2 class="title">
+      My work
+    </h2>
+    <div class="box">
+      <div class="prose prose-pink">
+        Even though I'm a <s>self-proclaimed</s> Frontend Developer, I have been known to work with varied technologies when needed.
+        <br>
+        You can see below the different fields I've worked on and my experience in them:
+        <ul>
+          <li>
+            <strong class="prose-lg">
+              Frontend:
+            </strong>
+            <br>
+            Working primarily with
+            <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer" class="font-bold">Vue</a>
+            <i> (both 2 and 3)</i>, I've structured complete frontends for multiple projects.
+            I also have some experience with
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="font-bold">React</a>,
+            but not as much.
+            <br>
+            Other experiences in the field include:
+            <strong>TypeScript</strong>,
+            <strong>Unit Testing</strong> with
+            <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">Jest</a>,
+            writing CSS with
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>
+            and creating a full <strong>Design System</strong> with
+            <a href="https://storybook.js.org/" target="_blank" rel="noopener noreferrer">Storybook</a>.
+          </li>
+
+          <br>
+
+          <li>
+            <strong class="prose-lg">
+              Backend:
+            </strong>
+            <br>
+            Working primarily with <strong>Node</strong> + <strong>TypeScript</strong>,
+            I've structured complete <strong>REST</strong> and
+            <a href="https://graphql.org" target="_blank" rel="noopener noreferrer">GraphQL</a>
+            <strong> APIs</strong> for multiple projects.
+            <br>
+            I've worked primarily with relational databases such as
+            <a href="https://postgresql.org" target="_blank" rel="noopener noreferrer">PostgreSQL</a>
+            and
+            <a href="https://mysql.com" target="_blank" rel="noopener noreferrer">MySQL</a>
+            but also had some experience with <strong>non-relational databases</strong> such as
+            <a href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noopener noreferrer">DynamoDB</a>.
+            <br>
+            Other experiences in the field include:
+            <a href="https://prisma.io" target="_blank" rel="noopener noreferrer">Prisma ORM</a>,
+            <strong>Unit Testing</strong> with
+            <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">Jest</a>,
+            creating a <strong>Web Scraper</strong>.
+          </li>
+
+          <br>
+
+          <li>
+            <strong class="prose-lg">
+              Devops:
+            </strong>
+            <br>
+            I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,
+            and have used varied services at multiple projects. Some of my favorite include <strong>Lambda functions</strong> for cheap and scalable code,
+            <strong>Cloudfront CDN + S3</strong> for blazing fast static sites <i>(like the one you're in right now)</i> and
+            <strong>DynamoDB/RDS</strong> for simple cloud-hosted databases.
+          </li>
+        </ul>
+      </div>
+
+      <div class="asterisks">
+        * * *
+      </div>
+    </div>
+  </section>
+</template>
+
+<script lang="ts">
+import dayjs from 'dayjs'
+import { computed, defineComponent } from 'vue'
+
+export default defineComponent({
+  setup() {
+    const birthDate = dayjs('09/02/1998')
+    const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
+
+    return { currentAge }
+  },
+})
+</script>
+
+<style lang="postcss" scoped>
+section {
+  @apply w-full mx-auto max-w-prose my-4 md:my-6 lg:mb-8;
+
+  .title {
+    @apply font-mono text-right text-3xl font-bold underline italic mb-4 mr-4 text-gray-800
+    sm:text-4xl;
+  }
+
+  .box {
+    @apply w-full p-6 bg-white border-2 border-black font-mono;
+    box-shadow: 6px 6px 0 theme('colors.gray.800');
+
+    .asterisks {
+      @apply w-full py-2 text-center text-4xl font-bold font-mono tracking-widest;
+    }
+  }
+}
+</style>

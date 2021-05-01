@@ -3,6 +3,7 @@
     <title-block />
     <summary-block />
     <about-me-block />
+    <my-work-block />
   </div>
 </template>
 

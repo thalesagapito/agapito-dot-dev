@@ -49,17 +49,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 section {
-  @apply w-full mx-auto max-w-prose my-4 md:my-6 lg:mb-8;
-
-  .title {
-    @apply font-mono text-right text-3xl font-bold underline italic mb-4 mr-4 text-gray-800
-    sm:text-4xl;
-  }
-
   .box {
-    @apply w-full p-6 bg-white border-2 border-black font-mono;
-    box-shadow: 6px 6px 0 theme('colors.gray.800');
-
     .interests {
       @apply w-full relative h-36 mt-8 mb-4;
 

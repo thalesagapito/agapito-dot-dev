@@ -1,12 +1,14 @@
 <template>
   <section>
-    <p class="prose summary">
-      <span class="large">Hi,</span>
-      my name is Thales Agapito, and I'm a
-      <strong>Frontend Developer</strong> based in Brazil that loves programming and creating cool new stuff.
-      <br>
-      In this page <i class="underline">(made with Vue 3)</i> you'll learn more about my interests, my work, and how to contact me. Make yourself at home <strong>⌂</strong>.
-    </p>
+    <div class="box">
+      <p class="prose">
+        <span class="large">Hi,</span>
+        my name is Thales Agapito, and I'm a
+        <strong>Frontend Developer</strong> based in Brazil that loves programming and creating cool new stuff.
+        <br>
+        In this page <i class="underline">(made with Vue 3)</i> you'll learn more about my interests, my work, and how to contact me. Make yourself at home <strong>⌂</strong>.
+      </p>
+    </div>
   </section>
 </template>
 
@@ -18,16 +20,10 @@ export default defineComponent({})
 
 <style lang="postcss" scoped>
 section {
-  @apply container max-w-prose my-8 p-6 bg-white border-2 border-black
-  sm:mt-12;
-  box-shadow:   6px 6px 0 theme('colors.gray.800');
+  @apply mt-8 sm:mt-12;
 
-  .summary {
-    @apply font-mono;
-
-    .large {
-      @apply text-3xl font-bold;
-    }
+  .large {
+    @apply text-3xl font-bold;
   }
 }
 </style>

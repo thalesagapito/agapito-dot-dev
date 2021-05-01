@@ -36,8 +36,6 @@
             <a href="https://storybook.js.org/" target="_blank" rel="noopener noreferrer">Storybook</a>.
           </li>
 
-          <br>
-
           <li>
             <strong class="list-title">
               Backend:
@@ -66,8 +64,6 @@
             creating a <strong>Web Scraper</strong>.
           </li>
 
-          <br>
-
           <li>
             <strong class="list-title">
               Devops:
@@ -91,17 +87,9 @@
 </template>
 
 <script lang="ts">
-import dayjs from 'dayjs'
-import { computed, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 
-export default defineComponent({
-  setup() {
-    const birthDate = dayjs('09/02/1998')
-    const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
-
-    return { currentAge }
-  },
-})
+export default defineComponent({})
 </script>
 
 <style lang="postcss" scoped>

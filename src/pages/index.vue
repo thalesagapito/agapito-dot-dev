@@ -4,6 +4,7 @@
     <summary-block />
     <about-me-block />
     <my-work-block />
+    <my-projects-block />
   </div>
 </template>
 

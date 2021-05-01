@@ -4,7 +4,7 @@
       My projects
     </h2>
     <div class="box">
-      <div class="prose prose-pink">
+      <div class="prose prose-indigo">
         While I have worked for multiple companies, I also like developing my own ideas in my free time. Here are some of the highlights:
         <ul>
           <li>

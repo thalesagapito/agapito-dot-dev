@@ -4,7 +4,7 @@
       My work
     </h2>
     <div class="box">
-      <div class="prose prose-pink">
+      <div class="prose prose-indigo">
         Even though I'm a Frontend Developer, I have been known to work with varied technologies when needed.
         <br>
         You can see below the different fields I've worked on and my experience in them:

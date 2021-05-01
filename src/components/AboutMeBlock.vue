@@ -54,7 +54,7 @@ section {
       @apply w-full relative h-36 mt-8 mb-4;
 
       .polaroid {
-        @apply absolute h-auto bg-white p-1.5 shadow-lg border border-black
+        @apply absolute h-auto bg-white p-1.5 shadow border border-black
         flex flex-col;
 
         img {
@@ -64,7 +64,7 @@ section {
           @apply block prose text-center text-sm w-full pt-1.5 font-mono font-bold;
         }
         small {
-          @apply text-xs text-red-600 prose text-center w-full font-mono italic;
+          @apply text-xs text-indigo-600 prose text-center w-full font-mono italic;
         }
 
         &.sneaker {

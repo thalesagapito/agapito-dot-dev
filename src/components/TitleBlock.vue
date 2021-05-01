@@ -44,7 +44,7 @@ export default defineComponent({
   .name {
     @apply font-black italic uppercase flex flex-col sm:pt-2;
     -webkit-text-stroke: 2px theme('colors.gray.900');
-    text-shadow:   1px 3px 0 theme('colors.gray.800');
+    text-shadow:   1px 2px 0 theme('colors.gray.700');
     .first {
       @apply text-5xl text-orange-300
       sm:text-6xl
@@ -65,10 +65,10 @@ export default defineComponent({
 @screen sm {
   .title-block-wrapper {
     .image {
-      box-shadow:   6px 6px 0 theme('colors.gray.800');
+      box-shadow:   6px 6px 0 theme('colors.gray.700');
     }
     .name {
-      text-shadow:   2px 4px 0 theme('colors.gray.800');
+      text-shadow:   2px 4px 0 theme('colors.gray.700');
     }
   }
 }

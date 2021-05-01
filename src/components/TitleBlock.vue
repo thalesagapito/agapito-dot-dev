@@ -38,7 +38,7 @@ export default defineComponent({
     @apply w-32 h-36 object-cover -mr-6 -mt-28 border-2 border-black
     sm:w-36 sm:h-40 sm:mr-0 sm:mt-0
     md:w-40 md:h-44;
-    box-shadow: 6px 6px 0 theme('colors.gray.800');
+    box-shadow: 6px 6px 0 theme('colors.gray.700');
   }
 
   .name {
@@ -64,9 +64,6 @@ export default defineComponent({
 
 @screen sm {
   .title-block-wrapper {
-    .image {
-      box-shadow: 6px 6px 0 theme('colors.gray.700');
-    }
     .name {
       text-shadow: 2px 4px 0 theme('colors.gray.700');
       -webkit-text-stroke: 2px theme('colors.gray.900');

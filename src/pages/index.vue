@@ -5,6 +5,7 @@
     <about-me-block />
     <my-work-block />
     <my-projects-block />
+    <contact-me-block />
   </div>
 </template>
 

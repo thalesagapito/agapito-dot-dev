@@ -9,7 +9,7 @@
         <br>
         Back then, I loved the idea of creating my own game, which inspired me to keep learning.
         <br>
-        Nowadays, I have found many other fullfilling activities that keep me motivated.
+        Nowadays, I have found many other fulfilling activities that keep me motivated.
         Still, <strong>programming is one of my favorite hobbies</strong>, as it's always challenging and lets me be creative with my work.
         <br>
         <br>

@@ -30,7 +30,7 @@
             <br>
             I also created an app with <strong>Flutter</strong> for the patients to submit their form responses.
             <br>
-            Unforntunately, <strong>the project was discontinued in 2020</strong> due to health concerns over conducting research during the pandemic.
+            Unfortunately, <strong>the project was discontinued in 2020</strong> due to health concerns over conducting research during the pandemic.
           </li>
         </ul>
       </div>

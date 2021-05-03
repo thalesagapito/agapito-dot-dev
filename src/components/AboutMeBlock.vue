@@ -18,13 +18,13 @@
 
       <div class="interests">
         <div class="polaroid sneaker">
-          <img src="/images/sneaker.jpeg" alt="A pair of white Nike Blazer sneakers.">
+          <img width="144" height="144" src="/images/sneaker.jpeg" alt="A pair of white Nike Blazer sneakers.">
           <span>blazers</span>
           <small>cool shoes!</small>
         </div>
 
         <div class="polaroid rap">
-          <img src="/images/rap.jpeg" alt="Album cover of the critically acclaimed Piñata by Freddie Gibbs.">
+          <img width="144" height="144" src="/images/rap.jpeg" alt="Album cover of the critically acclaimed Piñata by Freddie Gibbs.">
           <span>piñata</span>
           <small>cool album!</small>
         </div>

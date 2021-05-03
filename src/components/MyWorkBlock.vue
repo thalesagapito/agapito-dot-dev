@@ -13,10 +13,10 @@
             <strong class="list-title">
               Frontend:
               <div class="icons">
-                <img src="/images/tech/vue.svg" alt="Vue logo.">
-                <img src="/images/tech/tailwind.svg" alt="TailwindCSS logo." class="py-0.5">
-                <img src="/images/tech/ts.svg" alt="TypeScript logo.">
-                <img src="/images/tech/jest.svg" alt="Jest logo.">
+                <img width="20" height="20" src="/images/tech/vue.svg" alt="Vue logo.">
+                <img width="20" height="20" src="/images/tech/tailwind.svg" alt="TailwindCSS logo." class="py-0.5">
+                <img width="20" height="20" src="/images/tech/ts.svg" alt="TypeScript logo.">
+                <img width="20" height="20" src="/images/tech/jest.svg" alt="Jest logo.">
               </div>
             </strong>
             Working primarily with
@@ -40,9 +40,9 @@
             <strong class="list-title">
               Backend:
               <div class="icons">
-                <img src="/images/tech/ts.svg" alt="TypeScript logo.">
-                <img src="/images/tech/gql.svg" alt="GraphQL logo.">
-                <img src="/images/tech/jest.svg" alt="Jest logo.">
+                <img width="20" height="20" src="/images/tech/ts.svg" alt="TypeScript logo.">
+                <img width="20" height="20" src="/images/tech/gql.svg" alt="GraphQL logo.">
+                <img width="20" height="20" src="/images/tech/jest.svg" alt="Jest logo.">
               </div>
             </strong>
             Working primarily with <strong>Node</strong> + <strong>TypeScript</strong>,
@@ -68,7 +68,7 @@
             <strong class="list-title">
               Devops:
               <div class="icons">
-                <img src="/images/tech/aws.svg" alt="AWS logo.">
+                <img width="20" height="20" src="/images/tech/aws.svg" alt="AWS logo.">
               </div>
             </strong>
             I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,

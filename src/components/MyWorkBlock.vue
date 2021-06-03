@@ -68,7 +68,7 @@
             <strong class="list-title">
               Devops:
               <div class="icons">
-                <img width="20" height="20" src="/images/tech/aws.svg" alt="AWS logo.">
+                <img width="28" height="28" src="/images/tech/aws.svg" alt="AWS logo.">
               </div>
             </strong>
             I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,

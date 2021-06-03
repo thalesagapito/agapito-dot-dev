@@ -15,8 +15,8 @@ export default defineComponent({
 <style lang="postcss" scoped>
 .floating-back-button {
   @apply fixed top-0 left-0 w-24 h-8 rounded-br-full shadow-xl
-  flex justify-center items-center pr-2 pb-1
-  bg-indigo-300 text-white transition-all ease-out z-10;
+  flex justify-center items-center pr-2 pb-1 opacity-90
+  bg-indigo-400 text-white transition-all ease-out z-10;
 
   &:hover {
     @apply w-28;

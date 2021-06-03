@@ -10,16 +10,8 @@
 </template>
 
 <script lang="ts">
-import { useHead } from '@vueuse/head'
 import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    useHead({
-      title: 'Thales Agapito · Frontend Developer',
-    })
-  },
-})
+export default defineComponent({})
 </script>
 
 <style lang="postcss">

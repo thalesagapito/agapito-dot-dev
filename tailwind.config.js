@@ -6,6 +6,11 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      screens: {
+        print: { raw: 'print' },
+      },
+    },
     screens: {
       'sm': '640px',
       'md': '768px',

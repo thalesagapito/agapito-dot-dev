@@ -72,7 +72,7 @@
               </div>
             </strong>
             I have experience with <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS</a>,
-            and have used varied services at multiple projects. Some of my favorites include <strong>Lambda functions</strong> for cheap and scalable code,
+            and have used varied services in multiple projects. Some of my favorites include <strong>Lambda functions</strong> for cheap and scalable code,
             <strong>Cloudfront CDN + S3</strong> for blazing fast static sites <i>(like the one you're in right now)</i> and
             <strong>DynamoDB/RDS</strong> for simple cloud-hosted databases.
           </li>

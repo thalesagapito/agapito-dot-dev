@@ -20,7 +20,9 @@
         <dt>Email</dt>
         <dd><a href="mailto:thsousa101@gmail.com">thsousa101@gmail.com</a></dd>
         <dt>Github</dt>
-        <dd><a href="http://github.com/thalesagapito" target="_blank" rel="noopener noreferrer">thalesagapito</a></dd>
+        <dd><a href="https://github.com/thalesagapito" target="_blank" rel="noopener noreferrer">thalesagapito</a></dd>
+        <dt>Website</dt>
+        <dd><a href="https://agapito.dev" target="_blank" rel="noopener noreferrer">agapito.dev</a></dd>
       </dl>
     </section>
 

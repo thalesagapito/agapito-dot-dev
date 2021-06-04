@@ -238,7 +238,7 @@ export default defineComponent({
 
 @screen md {
   .wrapper {
-    @apply pb-8;
+    @apply pb-10;
     grid-template-columns: 42fr 58fr;
     grid-template-areas:
       "header     header"
@@ -264,6 +264,12 @@ export default defineComponent({
     .experiences {
       @apply border-l pl-6;
     }
+  }
+}
+
+@screen lg {
+  .wrapper {
+    @apply pb-14;
   }
 }
 

@@ -11,7 +11,7 @@
             <strong class="list-title">
               Personal page:
               <div class="icons">
-                <a href="http://github.com/thalesagapito/agapito-dot-dev" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/thalesagapito/agapito-dot-dev" target="_blank" rel="noopener noreferrer">
                   <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
                 </a>
               </div>
@@ -26,15 +26,15 @@
             <strong class="list-title">
               Luftcare:
               <div class="icons">
-                <a href="http://github.com/thalesagapito/luftcare-api" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/thalesagapito/luftcare-api" target="_blank" rel="noopener noreferrer">
                   <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
                   <small>API</small>
                 </a>
-                <a href="http://github.com/thalesagapito/luftcare-web-client" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/thalesagapito/luftcare-web-client" target="_blank" rel="noopener noreferrer">
                   <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
                   <small>WEB</small>
                 </a>
-                <a href="http://github.com/thalesagapito/luftcare_flutter_app" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/thalesagapito/luftcare_flutter_app" target="_blank" rel="noopener noreferrer">
                   <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
                   <small>APP</small>
                 </a>

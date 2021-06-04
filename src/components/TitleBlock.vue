@@ -4,7 +4,7 @@
       width="128"
       height="144"
       src="/images/me.jpeg"
-      alt="A picture of myself. A curly haired black man wearing glasses."
+      alt="A picture of myself."
       class="image"
     >
 

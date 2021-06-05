@@ -8,7 +8,7 @@
         If you got all the way down here I can only assume you read everything <i>(and/or your mouse scroll wheel works like a charm!)</i>.
         Either way, <strong>thank you for the attention!</strong>
         <br>
-        If you'd like to contact me for anything, project ideas, consulting, etc. you can reach me through <strong>Email</strong> or <strong>Telegram</strong>.
+        If you'd like to contact me for anything, project ideas, consulting, etc. you can reach me through <strong>Email</strong> or <strong>Linkedin</strong>.
         <br>
         You can also follow me on <strong>Github</strong> to check out my projects.
         <ul>
@@ -18,9 +18,9 @@
             <a href="mailto:thsousa101@gmail.com">thsousa101@gmail.com</a>
           </li>
           <li>
-            <strong>Telegram Username:</strong>
+            <strong>Linkedin:</strong>
             <br>
-            <a href="https://telegram.me/thsousa" target="_blank" rel="noopener noreferrer">@thsousa</a>
+            <a href="https://www.linkedin.com/in/thales-agapito" target="_blank" rel="noopener noreferrer">Thales Agapito</a>
           </li>
           <li>
             <strong>Github:</strong>

@@ -29,9 +29,7 @@
           </li>
         </ul>
 
-        <div class="asterisks">
-          * * *
-        </div>
+        <decorative-asterisks />
       </div>
     </div>
   </section>

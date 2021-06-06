@@ -58,9 +58,7 @@
         </ul>
       </div>
 
-      <div class="asterisks">
-        * * *
-      </div>
+      <decorative-asterisks />
     </div>
   </section>
 </template>

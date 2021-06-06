@@ -30,11 +30,6 @@ section {
     .list-title {
       @apply prose-lg flex justify-start items-center pb-1;
     }
-
-    .asterisks {
-      @apply w-full py-2 text-center text-4xl font-bold font-mono tracking-widest
-      md:py-3;
-    }
   }
 }
 </style>

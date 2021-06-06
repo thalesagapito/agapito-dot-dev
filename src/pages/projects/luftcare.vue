@@ -37,7 +37,7 @@
 
       <h2>The stack</h2>
       <p>
-        Many hours of research later, I eventually arrived at our tech stack.
+        A lot of research later, I eventually arrived at our tech stack.
         I chose <strong>Flutter</strong> for our mobile app, a <strong>GraphQL API with TypeGraphQL</strong> and a <strong>Vue + TS web client</strong>.
         Below I explore each decision and my experience with all the tech.
       </p>

@@ -43,7 +43,7 @@
             Initially conceived at the <strong>2018 NASA Space Apps Hackathon Curitiba</strong> <i>(which we won locally and were Global Award nominees)</i>,
             the project centered around a way to provide better care for asthma patients using technology. It evolved into a tool for doctors to monitor their patients health remotely.
             <br>
-            Using <strong>Apollo</strong>, <strong>TypeGraphql</strong> and <strong>TypeORM</strong>, I created an API that allowed the creation, submission, and scoring of medical questionnaires.
+            Using <strong>Apollo</strong>, <strong>TypeGraphQL</strong> and <strong>TypeORM</strong>, I created an API that allowed the creation, submission, and scoring of medical questionnaires.
             <br>
             With <strong>Vue</strong> and <strong>Element UI</strong>, I created a web admin panel for doctors that provided them tools for creating these questionnaires and monitoring their responses.
             <br>

@@ -42,15 +42,70 @@
         Below I explore each decision and my experience with all the tech.
       </p>
       <div class="image-container -mt-4">
-        <img src="/images/luftcare/stack.jpeg" alt="Our tech stack.">
-        <small>Our tech stack.</small>
+        <img src="/images/luftcare/stack.jpeg" alt="How our tech stack evolved over time, a Nativescript logo with an arrow pointing to three more logos, Vue, Flutter and GraphQL.">
+        <small>How our tech stack evolved.</small>
       </div>
-      <h3>Graphql API</h3>
-      🚧 Work in progress 🚧
-      <h3>Vue Web client</h3>
-      🚧 Work in progress 🚧
-      <h3>Flutter app</h3>
-      🚧 Work in progress 🚧
+
+      <h3>
+        GraphQL API
+        <a href="https://github.com/thalesagapito/luftcare-api" target="_blank" rel="noopener noreferrer">
+          <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
+        </a>
+      </h3>
+
+      <p>
+        For the API, I decided to go with a combination of
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</a>,
+        <a href="https://typeorm.io/#/" target="_blank" rel="noopener noreferrer">TypeORM</a>,
+        <a href="https://typegraphql.com/" target="_blank" rel="noopener noreferrer">TypeGraphQL</a> and
+        <a href="https://www.apollographql.com/docs/apollo-server/" target="_blank" rel="noopener noreferrer">Apollo Server</a> (plus
+        <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> for the
+        <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">Postgres DB</a> image).
+        <br>
+        My experience was a mixed bag, here are some highlights:
+      </p>
+      <ul>
+        <li>✅ Going with Typescript made the codebase much more maintainable over time, incredibly useful.</li>
+        <li>✅ Since I had multiple API consumers, choosing GraphQL over REST instantly addressed my over/underfetching concerns.</li>
+        <li>✅ Using both TypeORM and TypeGraphQL's decorator approach was very nice, since I only had to create one class for each entity, <a href="https://github.com/thalesagapito/luftcare-api/blob/master/src/entities/Questionnaire.ts" target="_blank" rel="noopener noreferrer">see here</a>.</li>
+        <li>🚫 TypeGraphQL was very new at the time <strong>(at version 0.17.6)</strong>, so related content was sparse. I had to go with whatever I thought was the best way to do things, facing problems not covered by guides, Stack Overflow or the official docs.</li>
+        <li>
+          🚫 While TypeGraphQL is very flexible, it can also be very tedious to implement. Creating every single <strong>input type</strong>/<strong>mutation</strong>/<strong>query</strong> can take a long time.
+          I later discovered other approaches which did most of the heavy lifting for me, but it was too late to use in this project.
+        </li>
+      </ul>
+
+      <h3>
+        Vue Web Client
+        <a href="https://github.com/thalesagapito/luftcare-web-client" target="_blank" rel="noopener noreferrer">
+          <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
+        </a>
+      </h3>
+      <p>
+        Our web client was simple: a dashboard for doctors to create questionnaires and evaluate their responses.
+        With that in mind, I decided to use
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</a>,
+        Vue 2 (<a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">Nuxt</a>),
+        <a href="https://element.eleme.io/#/en-US" target="_blank" rel="noopener noreferrer">Element UI</a>,
+        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS</a> and
+        <a href="https://github.com/nuxt-community/apollo-module" target="_blank" rel="noopener noreferrer">Apollo Client</a> with
+        <a href="https://www.graphql-code-generator.com/" target="_blank" rel="noopener noreferrer">GraphQL Code Generator</a>.
+        <br>
+        The experience here was overall more positive than in the API, here are some highlights:
+      </p>
+      <ul>
+        <li>✅ The <strong>Vue + Element + Tailwind</strong> combo was great! I was flying through the screens using Element's pre-made components and making quick adjustments with Tailwind when needed.</li>
+        <li>✅ <strong>GraphQL Codegen + Typescript</strong> was also great: by running a script I had the full API types. This made everything much more predictable and easier to maintain.</li>
+        <li>🚫 <strong>Vue 2 + Typescript</strong> support could definitely be improved, but I don't consider this a problem currently since Vue 3's support is very good.</li>
+      </ul>
+
+      <h3>
+        Flutter App
+        <a href="https://github.com/thalesagapito/luftcare_flutter_app" target="_blank" rel="noopener noreferrer">
+          <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
+        </a>
+      </h3>
+      <p>🚧 Work in progress 🚧</p>
       <decorative-asterisks />
     </decorative-box>
   </div>
@@ -81,6 +136,16 @@ export default defineComponent({})
     }
     small {
       @apply text-center;
+    }
+  }
+
+  h3 {
+    @apply flex items-center;
+    a {
+      @apply block ml-4;
+      img {
+        @apply my-0;
+      }
     }
   }
 }

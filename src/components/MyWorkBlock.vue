@@ -3,7 +3,7 @@
     <h2 class="title">
       My work
     </h2>
-    <div class="box">
+    <decorative-box>
       <div class="prose prose-indigo">
         Even though I'm a Frontend Developer, I have been known to work with varied technologies when needed.
         <br>
@@ -80,7 +80,7 @@
       </div>
 
       <decorative-asterisks />
-    </div>
+    </decorative-box>
   </section>
 </template>
 
@@ -91,8 +91,9 @@ export default defineComponent({})
 
 <style lang="postcss" scoped>
 section {
-  .box {
+  .decorative-box {
     .list-title {
+      @apply prose-lg flex justify-start items-center pb-1;
       .icons {
         @apply flex justify-start h-5 ml-2;
         img {

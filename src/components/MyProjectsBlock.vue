@@ -3,7 +3,7 @@
     <h2 class="title">
       My projects
     </h2>
-    <div class="box">
+    <decorative-box>
       <div class="prose prose-indigo">
         While I have worked for multiple companies, I also like developing my own ideas in my free time. Here are some of the highlights:
         <ul>
@@ -59,7 +59,7 @@
       </div>
 
       <decorative-asterisks />
-    </div>
+    </decorative-box>
   </section>
 </template>
 
@@ -70,8 +70,9 @@ export default defineComponent({})
 
 <style lang="postcss" scoped>
 section {
-  .box {
+  .decorative-box {
     .list-title {
+      @apply prose-lg flex justify-start items-center pb-1;
       .icons {
         @apply flex justify-start h-7 ml-1;
 

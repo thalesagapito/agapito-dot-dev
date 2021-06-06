@@ -22,15 +22,6 @@ section {
     @apply font-mono text-right text-3xl font-bold underline italic mb-4 mr-4 text-gray-800
     sm:text-4xl;
   }
-
-  .box {
-    @apply w-full p-6 bg-white border-2 border-black font-mono;
-    box-shadow: 6px 6px 0 theme('colors.gray.700');
-
-    .list-title {
-      @apply prose-lg flex justify-start items-center pb-1;
-    }
-  }
 }
 </style>
 

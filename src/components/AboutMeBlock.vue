@@ -3,7 +3,7 @@
     <h2 class="title">
       About me
     </h2>
-    <div class="box">
+    <decorative-box>
       <p class="prose">
         I'm {{ currentAge }} years old and have been programming since I was 15.
         <br>
@@ -29,7 +29,7 @@
           <small>cool album!</small>
         </div>
       </div>
-    </div>
+    </decorative-box>
   </section>
 </template>
 
@@ -49,7 +49,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 section {
-  .box {
+  .decorative-box {
     .interests {
       @apply w-full relative h-36 mt-8 mb-4;
 

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="box">
+    <decorative-box>
       <p class="prose prose-indigo">
         <span class="large">Hi,</span>
         my name is Thales Agapito, and I'm a
@@ -13,7 +13,7 @@
           right here.
         </router-link>
       </p>
-    </div>
+    </decorative-box>
   </section>
 </template>
 

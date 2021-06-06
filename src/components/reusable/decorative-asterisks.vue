@@ -1,5 +1,5 @@
 <template>
-  <span class="asterisks" aria-hidden="true">
+  <span class="decorative-asterisks" aria-hidden="true">
     * * *
   </span>
 </template>
@@ -10,7 +10,7 @@ export default defineComponent({})
 </script>
 
 <style lang="postcss" scoped>
-.asterisks {
+.decorative-asterisks {
   @apply block w-full py-2 text-center text-4xl font-bold font-mono tracking-widest
   md:py-3;
 }

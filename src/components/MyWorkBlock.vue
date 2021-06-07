@@ -32,7 +32,7 @@
             <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">Jest</a>,
             writing CSS with
             <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>
-            and creating a full <strong>Design System</strong> with
+            and creating a <strong>Component Library</strong> with
             <a href="https://storybook.js.org/" target="_blank" rel="noopener noreferrer">Storybook</a>.
           </li>
 

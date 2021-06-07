@@ -144,7 +144,7 @@ export default defineComponent({
         period: 'Mar 2020 — Nov 2020',
         topics: [
           'Tasked with maintaining legacy codebases in Vue and PHP.',
-          'Responsible for structuring and development of a <strong>Design System</strong> using <strong>Vue, Tailwind CSS, Storybook and full unit test coverage with Jest</strong>.',
+          'Responsible for structuring and development of a <strong>Component Library</strong> using <strong>Vue, Tailwind CSS, Storybook and full unit test coverage with Jest</strong>.',
         ],
       },
     ]

@@ -131,7 +131,7 @@ export default defineComponent({})
   .image-container {
     @apply w-full flex flex-col items-center;
     img {
-      @apply w-2/3 mx-auto mb-4 border-2 border-black;
+      @apply w-2/3 mx-auto mb-4 border-2 border-black rounded;
       box-shadow: 6px 6px 0 theme('colors.gray.700');
     }
     small {

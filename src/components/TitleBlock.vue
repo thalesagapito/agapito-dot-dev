@@ -37,7 +37,7 @@ export default defineComponent({
   lg:space-x-14;
 
   .image {
-    @apply w-32 h-36 object-cover -mr-6 -mt-28 border-2 border-black
+    @apply w-32 h-36 object-cover -mr-6 -mt-28 border-2 border-black rounded
     sm:w-36 sm:h-40 sm:mr-0 sm:mt-0
     md:w-40 md:h-44;
     box-shadow: 6px 6px 0 theme('colors.gray.700');

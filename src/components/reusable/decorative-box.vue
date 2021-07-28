@@ -11,7 +11,7 @@ export default defineComponent({})
 
 <style lang="postcss" scoped>
 .decorative-box {
-  @apply w-full p-6 bg-white border-2 border-black font-mono;
+  @apply w-full p-6 bg-white border-2 border-black font-mono rounded;
   box-shadow: 6px 6px 0 theme('colors.gray.700');
 }
 </style>

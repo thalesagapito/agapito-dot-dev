@@ -201,6 +201,7 @@ module.exports = {
       'move': 'move',
       'help': 'help',
       'not-allowed': 'not-allowed',
+      'pixel': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto',
     },
     divideColor: theme => theme('borderColor'),
     divideOpacity: theme => theme('borderOpacity'),
@@ -278,6 +279,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      pixel: ['"Press Start 2P"'],
     },
     fontSize: {
       'xs': ['0.75rem', { lineHeight: '1rem' }],
@@ -975,6 +977,10 @@ module.exports = {
     width: ['responsive'],
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
+    extend: {
+      backgroundColor: ['active'],
+      textColor: ['active'],
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

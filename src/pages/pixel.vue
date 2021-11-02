@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-pixel">
     hi, im {{ name }}
   </div>
 </template>

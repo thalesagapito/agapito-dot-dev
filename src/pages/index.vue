@@ -6,6 +6,7 @@
     <my-work-block />
     <my-projects-block />
     <contact-me-block />
+    <pixel-popup />
   </div>
 </template>
 

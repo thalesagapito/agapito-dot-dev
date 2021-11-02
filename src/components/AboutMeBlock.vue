@@ -64,7 +64,7 @@ section {
           @apply block prose text-center text-sm w-full pt-1.5 font-mono font-bold;
         }
         small {
-          @apply text-xs text-indigo-600 prose text-center w-full font-mono italic;
+          @apply text-xs text-red-600 prose text-center w-full font-mono italic;
         }
 
         &.sneaker {

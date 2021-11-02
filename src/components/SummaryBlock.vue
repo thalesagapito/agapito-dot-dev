@@ -1,7 +1,7 @@
 <template>
   <section>
     <decorative-box>
-      <p class="prose prose-indigo">
+      <p class="prose prose-orange">
         <span class="large">Hi,</span>
         my name is Thales Agapito, and I'm a
         <strong>Frontend Developer</strong> based in Brazil that loves programming and creating cool new stuff.

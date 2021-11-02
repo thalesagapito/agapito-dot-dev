@@ -48,12 +48,12 @@ export default defineComponent({
     -webkit-text-stroke: 1.5px theme('colors.gray.900');
     text-shadow: 1px 2px 0 theme('colors.gray.700');
     .first {
-      @apply text-5xl text-indigo-300
+      @apply text-5xl text-orange-300
       sm:text-6xl
       lg:text-7xl;
     }
     .last {
-      @apply text-4xl text-blue-200
+      @apply text-4xl text-yellow-200
       sm:text-5xl
       lg:text-6xl;
     }

@@ -4,7 +4,7 @@
       Contact me
     </h2>
     <decorative-box>
-      <div class="prose prose-indigo">
+      <div class="prose prose-orange">
         If you got all the way down here I can only assume you read everything <i>(and/or your mouse scroll wheel works like a charm!)</i>.
         Either way, <strong>thank you for the attention!</strong>
         <br>

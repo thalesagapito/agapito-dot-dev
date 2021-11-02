@@ -118,7 +118,7 @@ export default defineComponent({})
 
 <style lang="postcss" scoped>
 .wrapper {
-  @apply mx-auto prose prose-indigo py-10 px-4;
+  @apply mx-auto prose prose-orange py-10 px-4;
   h1 {
     @apply text-center;
   }

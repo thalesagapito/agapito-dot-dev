@@ -9,16 +9,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
+<script lang="ts" setup>
 </script>
 
 <style lang="postcss" scoped>
 .wrapper {
   @apply flex flex-col justify-center items-center prose max-w-none min-h-screen;
   .button {
-    @apply bg-indigo-400 rounded-full text-white no-underline py-2 px-4 shadow transition-all ease-out;
+    @apply bg-orange-400 rounded-lg text-white no-underline py-2 px-4 shadow transition-all ease-out border-2 border-black font-mono font-semibold;
+    box-shadow: 6px 6px 0 theme('colors.gray.700');
     &:hover {
       @apply opacity-90;
     }

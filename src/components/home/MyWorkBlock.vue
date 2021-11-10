@@ -5,7 +5,7 @@
     </h2>
     <decorative-box>
       <div class="prose prose-orange">
-        Even though I'm a Frontend Developer, I have been known to work with varied technologies when needed.
+        Even though I'm (mostly) a Frontend Developer, I have been known to work with varied technologies when needed.
         <br>
         You can see below the different fields I've worked on and my experience in them:
         <ul>

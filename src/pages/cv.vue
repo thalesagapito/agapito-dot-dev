@@ -2,29 +2,37 @@
   <floating-back-button />
   <div class="wrapper">
     <section class="header">
-      <h1>
-        Thales
-        <br class="print:hidden">
-        Agapito
-      </h1>
-      <h2>
-        Frontend Developer
-      </h2>
+      <div class="flex flex-col">
+        <h1>
+          Thales
+          <br class="print:hidden">
+          Agapito
+        </h1>
+        <h2 class="print:hidden">
+          Frontend Engineer
+        </h2>
+      </div>
+
+      <dl class="contact">
+        <!-- <dd v-for="{label, level} in languages" :key="label" class="flex items-center space-x-2">
+          <small>{{ level }}</small><span>{{ label }}</span>
+        </dd>
+        <br> -->
+        <dd v-for="{ key, anchor, text, image } in contactInfos" :key="key">
+          <a v-bind="anchor">
+            <span>{{ text }}</span>
+            <img width="16" height="16" v-bind="image">
+          </a>
+        </dd>
+      </dl>
     </section>
 
     <div class="infos">
-      <section class="details">
+      <section class="about">
         <h3 class="section-title">
-          Details
+          About
         </h3>
-        <dl>
-          <dt>Email</dt>
-          <dd><a href="mailto:thsousa101@gmail.com">thsousa101@gmail.com</a></dd>
-          <dt>Github</dt>
-          <dd><a href="https://github.com/thalesagapito" target="_blank" rel="noopener noreferrer">thalesagapito</a></dd>
-          <dt>Website</dt>
-          <dd><a href="https://agapito.dev" target="_blank" rel="noopener noreferrer">agapito.dev</a></dd>
-        </dl>
+        <p v-html="about" />
       </section>
 
       <section class="skills">
@@ -38,17 +46,6 @@
             <dd v-html="description" />
           </template>
         </dl>
-      </section>
-
-      <section class="languages">
-        <h3 class="section-title">
-          Languages
-        </h3>
-        <div class="prose print:prose-sm">
-          <ul>
-            <li v-for="language in languages" :key="language" v-html="language" />
-          </ul>
-        </div>
       </section>
     </div>
 
@@ -86,65 +83,104 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   setup() {
+    const contactInfos = [
+      {
+        key: 'github',
+        text: 'thalesagapito',
+        anchor: { href: 'https://github.com/thalesagapito', rel: 'noopener noreferrer', target: '_blank' },
+        image: { src: '/images/tech/github.svg', alt: 'Github logo.' },
+      },
+      {
+        key: 'website',
+        text: 'agapito.dev',
+        anchor: { href: 'https://agapito.dev', rel: 'noopener noreferrer', target: '_blank' },
+        image: { src: '/images/tech/globe.svg', alt: 'Globe icon.' },
+      },
+      {
+        key: 'email',
+        text: 'thales@agapito.dev',
+        anchor: { href: 'mailto:thales@agapito.dev' },
+        image: { src: '/images/tech/email.svg', alt: 'Email icon.' },
+      },
+    ]
+    const about = `
+      Over 5 years of development experience, passionate about writing beautiful and clean code.
+      Problem solver with a proactive attitude, always willing to go the extra mile.
+      Contributed to multiple open source projects, also the author of an NPM package.
+      Designed and developed complete architectures for scalable, distributed applications.
+    `
+
     const skills = [
       {
-        title: 'Vue',
+        title: 'Frontend (Vue, React)',
         description: `
-          I have worked with and structured multiple projects using Vue <strong>since 2018</strong>.
-          My experience includes <strong>both Vue 2 and 3</strong>,
+        Strong experience with Vue, structured multiple projects with both Vue 2 and 3, 
           ranging from <strong>mobile-first customer centric interfaces</strong>,
           to <strong>feature-rich dashboards in SSR applications</strong>.
+          Familiarity with React, contributed to small projects in React 16 and higher.
         `,
       },
       {
-        title: 'Typescript',
+        title: 'TypeScript/JavaScript',
         description: `
-          While I started using Typescript in <strong>2018 in a backend application</strong>,
-          I only applied it in frontend development in <strong>2019</strong>.
-          Since then I have almost always <strong>pushed for Typescript codebases</strong> for the added <strong>maintainability over the years</strong>.
+          Strong experience with TypeScript and JavaScript.
+          Used them in both server and client-side environments, designing and developing complete projects.
         `,
       },
       {
         title: 'DevOps / Cloud',
         description: `
-          My work as a frontend developer encompasses <strong>deploying and maintaining</strong> my projects.
-          Mostly focusing on AWS, I have experience with multiple services for <strong>building and deploying</strong> code.
+          Experience with CI/CD tools and multiple services involved in creating highly scalable, and easily maintainable projects <strong>(CodePipeline, Github actions, Lambda, EC2, Cloudfront, RDS, etc.)</strong>
+        `,
+      },
+      {
+        title: 'Testing',
+        description: `
+          Strong experience with <strong>unit testing with Jest</strong> in both frontend and backend projects.
+          Familiar with <strong>E2E testing with Cypress</strong>.
         `,
       },
       // {
       //   title: 'Backend',
       //   description: `
-      //     Even though I'm currently a frontend developer, <strong>I've worked as full stack developer before</strong>
+      //     Even though I'm currently a frontend engineer, <strong>I've worked as full stack developer before</strong>
       //     and developed multiple APIs. From authentication to payments, both <strong>REST</strong> and <strong>GraphQL</strong>.
       //   `,
       // },
     ]
 
     const languages = [
-      '<strong>Portuguese </strong>(Native)',
-      '<strong>English </strong>(Fluent)',
+      { label: '🇺🇸', level: 'fluent' },
+      { label: '🇧🇷', level: 'native' },
     ]
 
     const workExperiences = [
       {
-        title: 'Frontend Developer, EngagED',
-        location: 'Curitiba',
+        title: 'Head of Frontend, EngagED',
+        location: 'Curitiba, Brazil',
         period: 'Aug 2019 — Mar 2020, Nov 2020 — Current',
         topics: [
-          'Responsible for replacing multiple legacy frontend codebases with <strong>newer and better-suited tech<strong>.',
-          'Brought new strategies to the devops process. Using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
-          'Hand-picked the technologies for the frontend stack. Focusing on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>, arrived on a combination of <strong>Vue + Typescript + Tailwind CSS (PostCSS)</strong>.',
+          'Replaced legacy frontend codebases with <strong>newer and better-suited tech<strong>.',
+          'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
+          'Hand-picked the technologies for the frontend stack. Focused on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>',
           // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',
           // 'Added <strong>event tracking</strong> capabilities and <strong>boosted conversion</strong> in enrollment pages.',
         ],
       },
       {
         title: 'Full Stack Developer, Leads2b',
-        location: 'Curitiba',
+        location: 'Curitiba, Brazil',
         period: 'Mar 2020 — Nov 2020',
         topics: [
           'Tasked with maintaining legacy codebases in Vue and PHP.',
           'Responsible for structuring and development of a <strong>Component Library</strong> using <strong>Vue, Tailwind CSS, Storybook and full unit test coverage with Jest</strong>.',
+        ],
+      },
+      {
+        title: 'Previous experiences',
+        period: '2017 - Mar 2020',
+        topics: [
+          'Varied work including React, Angular, PHP, Java and JS/TS development.',
         ],
       },
     ]
@@ -152,24 +188,26 @@ export default defineComponent({
     const otherExperiences = [
       {
         title: 'NASA Space Apps Hackathon 2018 Winner',
-        location: 'Curitiba',
+        location: 'Curitiba, Brazil',
         topics: [
-          'Developed a <strong>local award winning</strong> and <strong>global nominee</strong> solution. Using <strong>Nativescript-Vue</strong>, I created a PoC app for asthma patients to better monitor their treatment.',
-          'The project evolved into a tool for doctors to create and evaluate health questionnaires. It was discontinued in 2020 due to health concerns over conducting research during the pandemic.',
+          'Developed a <strong>local award winning</strong> and <strong>global nominee</strong> solution. Using <strong>Nativescript-Vue</strong>, I created a PoC app for asthma patients to monitor their treatment.',
+          'The project evolved into a tool for doctors to create and evaluate health questionnaires. It was discontinued in 2020 due to health concerns regarding research during the pandemic.',
         ],
       },
       {
-        title: 'Strassen',
-        location: 'Curitiba',
+        title: 'Strassen - Sneaker marketplace',
+        location: 'Curitiba, Brazil',
         topics: [
-          'Developed a <strong>marketplace for buying and selling sneakers</strong>. Using <strong>Prisma and Nexus GraphQL</strong> I created an API for management and buy or sell operations.',
-          'Using <strong>Vue and Typescript</strong>, I developed an admin dashboard and a public website for users to buy and sell their sneakers.',
+          'Using <strong>Prisma and Nexus GraphQL</strong>, I created an API for management and buy/sell operations for a sneaker marketplace.',
+          'Using <strong>Vue and TypeScript</strong>, I developed an admin dashboard and a public website for users to buy and sell their sneakers.',
           'The project uses many AWS services, such as <strong>S3, RDS, Cloudfront CDN and Lambda Functions</strong>.',
         ],
       },
     ]
 
     return {
+      contactInfos,
+      about,
       skills,
       languages,
       workExperiences,
@@ -201,13 +239,22 @@ export default defineComponent({
   }
 
   .header {
-    @apply flex flex-col justify-start items-start border-b pt-10 pb-8;
+    @apply flex justify-between items-center border-b pt-10 pb-4;
     grid-area: header;
     h1 {
       @apply text-gray-800 font-medium uppercase text-5xl tracking-widest;
     }
     h2 {
       @apply text-gray-500 text-xl pt-4 tracking-wide;
+    }
+    .contact {
+      @apply flex flex-col justify-center items-end w-full print:text-sm;
+      dd a {
+        @apply flex items-center space-x-2 mb-2;
+        img {
+          @apply h-4 mt-px;
+        }
+      }
     }
   }
 
@@ -221,6 +268,11 @@ export default defineComponent({
     }
   }
 
+  .about p {
+    @apply prose print:prose-sm;
+  }
+
+  .about,
   .details,
   .skills {
     @apply pt-6;
@@ -313,6 +365,7 @@ export default defineComponent({
       }
     }
 
+    .about,
     .details,
     .skills,
     .languages {
@@ -353,6 +406,10 @@ export default defineComponent({
       h2 {
         @apply text-lg pt-0;
       }
+      .contact,
+      .contact dd a {
+        @apply my-0;
+      }
     }
 
     .prose ul,
@@ -366,6 +423,7 @@ export default defineComponent({
       }
     }
 
+    .about,
     .details,
     .skills,
     .languages {
@@ -386,6 +444,7 @@ export default defineComponent({
       }
     }
 
+    .about,
     .details,
     .experiences {
       @apply pt-4;

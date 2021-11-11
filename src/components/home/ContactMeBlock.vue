@@ -15,7 +15,7 @@
           <li>
             <strong>My Email:</strong>
             <br>
-            <a href="mailto:thsousa101@gmail.com">thsousa101@gmail.com</a>
+            <a href="mailto:thales@agapito.dev">thales@agapito.dev</a>
           </li>
           <li>
             <strong>Linkedin:</strong>

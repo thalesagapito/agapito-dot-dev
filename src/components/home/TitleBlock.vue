@@ -15,7 +15,7 @@
       </h1>
 
       <h2 class="subtitle">
-        Frontend Developer
+        Software Engineer
       </h2>
     </div>
   </div>

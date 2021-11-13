@@ -18,11 +18,19 @@
 
       <div class="flex items-center">
         <div class="image-container">
-          <img src="/images/luftcare/inhaler.jpeg" alt="Our smart inhaler prototype.">
+          <img
+            class="w-2/3"
+            src="/images/luftcare/inhaler.jpeg"
+            alt="Our smart inhaler prototype."
+          >
           <small>Our smart inhaler prototype.</small>
         </div>
         <div class="image-container">
-          <img src="/images/luftcare/app-nativescript.png" alt="Our PoC app.">
+          <img
+            class="w-2/3"
+            src="/images/luftcare/app-nativescript.png"
+            alt="Our PoC app."
+          >
           <small>Our PoC app.</small>
         </div>
       </div>
@@ -42,7 +50,11 @@
         Below I explore each decision and my experience with all the tech.
       </p>
       <div class="image-container -mt-4">
-        <img src="/images/luftcare/stack.jpeg" alt="How our tech stack evolved over time, a Nativescript logo with an arrow pointing to three more logos, Vue, Flutter and GraphQL.">
+        <img
+          class="w-2/3"
+          src="/images/luftcare/stack.jpeg"
+          alt="How our tech stack evolved over time, a Nativescript logo with an arrow pointing to three more logos, Vue, Flutter and GraphQL."
+        >
         <small>How our tech stack evolved.</small>
       </div>
 
@@ -99,13 +111,66 @@
         <li>🚫 <strong>Vue 2 + Typescript</strong> support could definitely be improved, but I don't consider this a problem currently since Vue 3's support is very good.</li>
       </ul>
 
+      <div class="image-container -mt-4">
+        <img
+          class="w-11/12"
+          src="/images/luftcare/dashboard.jpg"
+          alt="Our dashboard. A page containing a sidebar with multiple links, a large line graph and a table."
+        >
+        <small>Our dashboard.</small>
+      </div>
+
       <h3>
         Flutter App
         <a href="https://github.com/thalesagapito/luftcare_flutter_app" target="_blank" rel="noopener noreferrer">
           <img width="20" height="20" src="/images/tech/github.svg" alt="Github logo.">
         </a>
       </h3>
-      <p>🚧 Work in progress 🚧</p>
+      <p>
+        The app was also very straightforward. It had a login page, a home page with a listing of available and answered questionnaires, and the questionnaire answer pages.
+        Since it consumed a GraphQL API, I used <a href="https://github.com/comigor/artemis" target="_blank" rel="noopener noreferrer">Artemis</a>, a Dart type generator from GraphQL schemas and queries, which made the experience a lot more enjoyable.
+        Here are some of the highlights:
+      </p>
+      <ul>
+        <li>✅ <strong>Flutter</strong> (or any hybrid approach) was definitely the best decision, writing one code and getting two apps was essential for our time limitations.</li>
+        <li>✅ <strong>Artemis</strong> was also very good: while the setup was more complicated, the generated types help out a lot in the long run.</li>
+      </ul>
+
+      <div class="flex items-start -mt-4">
+        <div class="image-container">
+          <img
+            class="w-2/3 flutter"
+            src="/images/luftcare/app-flutter-1.jpg"
+            alt="Home page with questionnaires listing."
+          >
+          <small>Home page.</small>
+        </div>
+        <div class="image-container">
+          <img
+            class="w-2/3 flutter"
+            src="/images/luftcare/app-flutter-2.jpg"
+            alt="Questionnaire answering page."
+          >
+          <small>Questionnaire answering page.</small>
+        </div>
+      </div>
+
+      <h2>Deployment</h2>
+      <p>
+        The API and Web Dashboard were deployed to a DigitalOcean droplet, and the Flutter App was published on app stores.
+        The CI/CD was handled using <a href="https://buddy.works/" target="_blank" rel="noopener noreferrer">Buddy</a>.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        The project was interrupted in 2020 due to health concerns over conducting research during the pandemic.
+        <br>
+        Still, it was fun while it lasted and a great learning opportunity for me. It was my first time doing a lot of things on my own.
+        Like publishing a Flutter app, configuring a CI/CD workflow, and deploying an API/Web app publicly.
+        <br>
+        I gained a lot of experience and much of what I learned was useful later on.
+      </p>
+
       <decorative-asterisks />
     </decorative-box>
   </div>
@@ -131,8 +196,11 @@ export default defineComponent({})
   .image-container {
     @apply w-full flex flex-col items-center;
     img {
-      @apply w-2/3 mx-auto mb-4 border-2 border-black rounded;
+      @apply mx-auto mb-4 border-2 border-black rounded;
       box-shadow: 6px 6px 0 theme('colors.gray.700');
+      &.flutter {
+        @apply rounded-3xl;
+      }
     }
     small {
       @apply text-center;

@@ -6,7 +6,7 @@
         my name is Thales Agapito, and I'm a
         <strong>Software Engineer</strong> based in Brazil that loves programming and creating cool new stuff.
         <br>
-        In this page <i class="underline">(made with Vue 3)</i> you'll learn more about my interests, my work, and how to contact me. Make yourself at home <strong>⌂</strong>.
+        In this page you'll learn more about my interests, my work, and how to contact me.
         <br>
         If you're looking for my <strong>CV</strong> it's
         <router-link to="/cv">

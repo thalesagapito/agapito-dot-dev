@@ -4,10 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite-ssg build",
-    "serve": "vite preview",
-    "sync": "aws s3 sync --cache-control 'max-age=31536000' dist/ \"s3://agapito-dot-dev\" --delete --acl public-read",
-    "invalidate": "aws cloudfront create-invalidation --distribution-id E3DD9C15MXRE55 --paths \"/*\"",
-    "deploy": "yarn build && yarn sync && yarn invalidate"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@vueuse/core": "^4.9.1",

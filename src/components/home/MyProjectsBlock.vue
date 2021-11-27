@@ -18,8 +18,7 @@
             </strong>
             The page you're on right now was developed in 2021 using <strong>Vue 3</strong>, <strong>Typescript</strong> and <strong>TailwindCSS</strong>.
             I drew the design myself and implemented it in a weekend.
-            It is <strong>statically generated</strong>, then uploaded to an <strong>S3 Bucket</strong> and then served to you
-            by a <strong>Cloudfront CDN Distribution</strong> <i>(it's cool stuff)</i>.
+            It is <strong>statically generated</strong> and deployed using <strong>AWS Amplify</strong>.
           </li>
 
           <li>

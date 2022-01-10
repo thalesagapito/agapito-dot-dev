@@ -121,7 +121,7 @@ export default defineComponent({
         `,
       },
       {
-        title: 'TypeScript/JavaScript',
+        title: 'TypeScript / JavaScript',
         description: `
           Strong experience with TypeScript and JavaScript.
           Used them in both server and client-side environments, designing and developing complete projects.

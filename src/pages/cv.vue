@@ -107,7 +107,7 @@ export default defineComponent({
       Over 5 years of development experience, passionate about writing beautiful and clean code.
       Problem solver with a proactive attitude, always willing to go the extra mile.
       Contributed to multiple open source projects, also the author of an NPM package.
-      Designed and developed complete architectures for scalable, distributed applications.
+      Designed and developed complete architectures for scalable applications.
     `
 
     const skills = [

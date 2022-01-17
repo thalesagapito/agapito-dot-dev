@@ -162,7 +162,7 @@ export default defineComponent({
         topics: [
           'Replaced legacy frontend codebases with <strong>newer and better-suited tech<strong>.',
           'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
-          'Hand-picked the technologies for the frontend stack. Focused on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>',
+          'Hand-picked the technologies for the frontend stack. Focused on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>.',
           // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',
           // 'Added <strong>event tracking</strong> capabilities and <strong>boosted conversion</strong> in enrollment pages.',
         ],

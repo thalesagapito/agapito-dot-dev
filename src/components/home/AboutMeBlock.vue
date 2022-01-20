@@ -7,11 +7,9 @@
       <p class="prose">
         I'm {{ currentAge }} years old and have been programming since I was 15.
         <br>
-        Back then, I loved the idea of creating my own game, which inspired me to keep learning.
+        I love learning and creating new things, which is why I'm always working on a side project.
         <br>
-        Nowadays, I have found many other fulfilling activities that keep me motivated.
-        Still, <strong>programming is one of my favorite hobbies</strong>, as it's always challenging and lets me be creative with my work.
-        <br>
+        I'm a fan of easy to use, good looking products that leave a lasting impression, so I'm always reading about and trying out new tools and tech in my projects.
         <br>
         Some of my other interests are sneakers, photography and rap music.
       </p>

@@ -17,7 +17,6 @@
               </div>
             </strong>
             The page you're on right now was developed in 2021 using <strong>Vue 3</strong>, <strong>Typescript</strong> and <strong>TailwindCSS</strong>.
-            I drew the design myself and implemented it in a weekend.
             It is <strong>statically generated</strong> and deployed using <strong>AWS Amplify</strong>.
           </li>
 
@@ -53,6 +52,13 @@
             <router-link to="/projects/luftcare">
               Read more about it here.
             </router-link>
+          </li>
+
+          <li>
+            <strong class="list-title">There's more!</strong>
+            <strong>I just haven't had the time to write them all down.</strong>
+            <br>
+            But ask me about <strong>Strassen</strong>, <strong>Hangloos</strong>, or what I'm currently working on and I'll be happy to tell you.
           </li>
         </ul>
       </div>

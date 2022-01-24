@@ -112,12 +112,12 @@ export default defineComponent({
 
     const skills = [
       {
-        title: 'React (Next.js) / Vue (Nuxt.js)',
+        title: 'Vue (Nuxt.js) / React (Next.js)',
         description: `
-          Solid experience with React, contributed to projects with <strong>both plain React and Next.js</strong>.
           Strong experience with Vue and Nuxt.js, structured multiple projects 
           ranging from <strong>mobile-first customer centric interfaces</strong>,
           to <strong>feature-rich dashboards in SSR applications</strong>.
+          Solid experience with React, contributed to projects with <strong>both plain React and Next.js</strong>.
         `,
       },
       {

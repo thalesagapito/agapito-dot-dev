@@ -160,7 +160,7 @@ export default defineComponent({
         location: 'Curitiba, Brazil',
         period: 'Aug 2019 — Mar 2020, Nov 2020 — Current',
         topics: [
-          'Replaced legacy frontend codebases with <strong>newer and better-suited tech<strong>.',
+          'Replaced legacy frontend codebases with <strong>more maintainable, scalable and performant tech<strong>.',
           'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
           'Hand-picked the technologies for the frontend stack. Focused on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>.',
           // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',

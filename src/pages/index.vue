@@ -1,3 +1,8 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({})
+</script>
+
 <template>
   <div class="wrapper">
     <title-block />
@@ -9,11 +14,6 @@
     <!-- <pixel-popup /> -->
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
 
 <style lang="postcss">
 section {

@@ -1,13 +1,13 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({})
+</script>
+
 <template>
   <div class="decorative-box">
     <slot />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
 
 <style lang="postcss" scoped>
 .decorative-box {

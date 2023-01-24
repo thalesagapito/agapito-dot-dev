@@ -1,3 +1,6 @@
+<script lang="ts" setup>
+</script>
+
 <template>
   <div class="wrapper">
     <h2>
@@ -8,9 +11,6 @@
     </router-link>
   </div>
 </template>
-
-<script lang="ts" setup>
-</script>
 
 <style lang="postcss" scoped>
 .wrapper {

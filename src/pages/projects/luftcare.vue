@@ -1,3 +1,8 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({})
+</script>
+
 <template>
   <floating-back-button />
   <div class="wrapper">
@@ -175,11 +180,6 @@
     </decorative-box>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
 
 <style lang="postcss" scoped>
 .wrapper {

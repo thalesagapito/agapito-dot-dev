@@ -1,16 +1,16 @@
-<template>
-  <router-link to="/" class="floating-back-button">
-    <span class="arrow">◀</span>
-    <span class="text">back</span>
-  </router-link>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
 })
 </script>
+
+<template>
+  <router-link to="/" class="floating-back-button">
+    <span class="arrow">◀</span>
+    <span class="text">back</span>
+  </router-link>
+</template>
 
 <style lang="postcss" scoped>
 .floating-back-button {

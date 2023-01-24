@@ -1,3 +1,10 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+})
+</script>
+
 <template>
   <div class="title-block-wrapper">
     <img
@@ -21,15 +28,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-})
-</script>
-
 <style lang="postcss" scoped>
-
 .title-block-wrapper {
   @apply flex justify-center items-center pt-28
   sm:flex-row sm:space-x-6 sm:pt-16

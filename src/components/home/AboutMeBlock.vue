@@ -1,3 +1,17 @@
+<script lang="ts">
+import dayjs from 'dayjs'
+import { computed, defineComponent } from 'vue'
+
+export default defineComponent({
+  setup() {
+    const birthDate = dayjs('09/02/1998')
+    const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
+
+    return { currentAge }
+  },
+})
+</script>
+
 <template>
   <section>
     <h2 class="title">
@@ -30,20 +44,6 @@
     </decorative-box>
   </section>
 </template>
-
-<script lang="ts">
-import dayjs from 'dayjs'
-import { computed, defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    const birthDate = dayjs('09/02/1998')
-    const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
-
-    return { currentAge }
-  },
-})
-</script>
 
 <style lang="postcss" scoped>
 section {

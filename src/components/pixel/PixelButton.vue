@@ -1,9 +1,3 @@
-<template>
-  <div :class="['pixel-button-wrapper', type]">
-    <slot>{{ label }}</slot>
-  </div>
-</template>
-
 <script lang="ts" setup>
 withDefaults(
   defineProps<{
@@ -16,6 +10,12 @@ withDefaults(
   },
 )
 </script>
+
+<template>
+  <div class="pixel-button-wrapper" :class="[type]">
+    <slot>{{ label }}</slot>
+  </div>
+</template>
 
 <style lang="postcss" scoped>
 .pixel-button-wrapper {

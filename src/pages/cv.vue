@@ -1,83 +1,3 @@
-<template>
-  <floating-back-button />
-  <div class="wrapper">
-    <section class="header">
-      <div class="flex flex-col">
-        <h1>
-          Thales
-          <br class="print:hidden">
-          Agapito
-        </h1>
-        <h2 class="print:hidden">
-          Frontend Engineer
-        </h2>
-      </div>
-
-      <dl class="contact">
-        <!-- <dd v-for="{label, level} in languages" :key="label" class="flex items-center space-x-2">
-          <small>{{ level }}</small><span>{{ label }}</span>
-        </dd>
-        <br> -->
-        <dd v-for="{ key, anchor, text, image } in contactInfos" :key="key">
-          <a v-bind="anchor">
-            <span>{{ text }}</span>
-            <img width="16" height="16" v-bind="image">
-          </a>
-        </dd>
-      </dl>
-    </section>
-
-    <div class="infos">
-      <section class="about">
-        <h3 class="section-title">
-          About
-        </h3>
-        <p v-html="about" />
-      </section>
-
-      <section class="skills">
-        <h3 class="section-title">
-          Skills
-        </h3>
-
-        <dl>
-          <template v-for="{ title, description }, i in skills" :key="title">
-            <dt :class="{ 'pt-4': i }" v-html="title" />
-            <dd v-html="description" />
-          </template>
-        </dl>
-      </section>
-    </div>
-
-    <section class="experiences">
-      <h3 class="section-title">
-        Work experience
-      </h3>
-
-      <div v-for="{ title, location, period, topics } in workExperiences" :key="title" class="experience">
-        <h4 class="title" v-html="title" />
-        <span class="location" v-html="location" />
-        <span class="period" v-html="period" />
-        <ul class="topics">
-          <li v-for="topic in topics" :key="topic" v-html="topic" />
-        </ul>
-      </div>
-
-      <h3 class="section-title">
-        Other experiences
-      </h3>
-
-      <div v-for="{ title, location, topics } in otherExperiences" :key="title" class="experience">
-        <h4 class="title" v-html="title" />
-        <span class="location" v-html="location" />
-        <ul class="topics">
-          <li v-for="topic in topics" :key="topic" class="other" v-html="topic" />
-        </ul>
-      </div>
-    </section>
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
 
@@ -216,6 +136,86 @@ export default defineComponent({
   },
 })
 </script>
+
+<template>
+  <floating-back-button />
+  <div class="wrapper">
+    <section class="header">
+      <div class="flex flex-col">
+        <h1>
+          Thales
+          <br class="print:hidden">
+          Agapito
+        </h1>
+        <h2 class="print:hidden">
+          Frontend Engineer
+        </h2>
+      </div>
+
+      <dl class="contact">
+        <!-- <dd v-for="{label, level} in languages" :key="label" class="flex items-center space-x-2">
+          <small>{{ level }}</small><span>{{ label }}</span>
+        </dd>
+        <br> -->
+        <dd v-for="{ key, anchor, text, image } in contactInfos" :key="key">
+          <a v-bind="anchor">
+            <span>{{ text }}</span>
+            <img width="16" height="16" v-bind="image">
+          </a>
+        </dd>
+      </dl>
+    </section>
+
+    <div class="infos">
+      <section class="about">
+        <h3 class="section-title">
+          About
+        </h3>
+        <p v-html="about" />
+      </section>
+
+      <section class="skills">
+        <h3 class="section-title">
+          Skills
+        </h3>
+
+        <dl>
+          <template v-for="{ title, description }, i in skills" :key="title">
+            <dt :class="{ 'pt-4': i }" v-html="title" />
+            <dd v-html="description" />
+          </template>
+        </dl>
+      </section>
+    </div>
+
+    <section class="experiences">
+      <h3 class="section-title">
+        Work experience
+      </h3>
+
+      <div v-for="{ title, location, period, topics } in workExperiences" :key="title" class="experience">
+        <h4 class="title" v-html="title" />
+        <span class="location" v-html="location" />
+        <span class="period" v-html="period" />
+        <ul class="topics">
+          <li v-for="topic in topics" :key="topic" v-html="topic" />
+        </ul>
+      </div>
+
+      <h3 class="section-title">
+        Other experiences
+      </h3>
+
+      <div v-for="{ title, location, topics } in otherExperiences" :key="title" class="experience">
+        <h4 class="title" v-html="title" />
+        <span class="location" v-html="location" />
+        <ul class="topics">
+          <li v-for="topic in topics" :key="topic" class="other" v-html="topic" />
+        </ul>
+      </div>
+    </section>
+  </div>
+</template>
 
 <style lang="postcss" scoped>
 .wrapper {

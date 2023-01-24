@@ -1,3 +1,8 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({})
+</script>
+
 <template>
   <section>
     <decorative-box>
@@ -16,11 +21,6 @@
     </decorative-box>
   </section>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
 
 <style lang="postcss" scoped>
 section {

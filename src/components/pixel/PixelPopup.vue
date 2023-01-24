@@ -1,3 +1,9 @@
+<script lang="ts" setup>
+import { ref } from '@vue/reactivity'
+
+const visible = ref(true)
+</script>
+
 <template>
   <div v-if="visible" class="pixel-popup-wrapper">
     <p>Try the interactive mode?</p>
@@ -8,12 +14,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import { ref } from '@vue/reactivity'
-
-const visible = ref(true)
-</script>
 
 <style lang="postcss" scoped>
 .pixel-popup-wrapper {

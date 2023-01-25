@@ -10,7 +10,7 @@ export const createApp = ViteSSG(
   // vue-router options
   { routes, scrollBehavior: (to, from, savedPosition) => savedPosition || ({ top: 0 }) },
   // function to have custom setups
-  ({ app, router, isClient }) => {
+  () => {
     // install plugins etc.
   },
 )

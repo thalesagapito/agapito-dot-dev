@@ -412,7 +412,7 @@ export default defineComponent({
       }
     }
 
-    .prose ul,
+    ul,
     .experiences .experience ul {
       @apply list-none;
       li {

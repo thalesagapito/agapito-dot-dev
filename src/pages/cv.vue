@@ -24,40 +24,52 @@ export default defineComponent({
       },
     ]
     const about = `
-      Over 5 years of development experience, passionate about writing beautiful and clean code.
+      Over 6 years of development experience, passionate about writing beautiful and clean code.
       Problem solver with a proactive attitude, always willing to go the extra mile.
-      Contributed to multiple open source projects, also the author of an NPM package.
-      Designed and developed complete architectures for scalable applications.
+      Contributed to many open source projects, designed and developed complete architectures for multiple applications.
     `
 
     const skills = [
       {
-        title: 'Vue (Nuxt.js) / React (Next.js)',
+        title: 'Vue / Nuxt',
         description: `
-          Strong experience with Vue and Nuxt.js, structured multiple projects 
-          ranging from <strong>mobile-first customer centric interfaces</strong>,
-          to <strong>feature-rich dashboards in SSR applications</strong>.
-          Solid experience with React, contributed to projects with <strong>both plain React and Next.js</strong>.
-        `,
-      },
-      {
-        title: 'TypeScript / JavaScript',
-        description: `
-          Strong experience with TypeScript and JavaScript.
-          Used them in both server and client-side environments, designing and developing complete projects.
-        `,
-      },
-      {
-        title: 'DevOps / Cloud',
-        description: `
-          Experience with CI/CD tools and multiple services involved in creating highly scalable, and easily maintainable projects <strong>(CodePipeline, Github actions, Lambda, EC2, Cloudfront, RDS, etc.)</strong>
+          In-depth knowledge of Vue 2/3 and Nuxt, mostly using <strong>Typescript</strong>.
+          <br>
+          Very familiar with many of the ecosystem's libraries, like <strong>Pinia, Vue Router, VueUse</strong>, etc.
         `,
       },
       {
         title: 'Testing',
         description: `
-          Strong experience with <strong>unit testing with Jest</strong> in both frontend and backend projects.
-          Familiar with <strong>E2E testing with Cypress</strong>.
+          Strong experience in <strong>unit testing with Jest and Vue Testing Library</strong>.
+          Strong experience with <strong>E2E testing with Playwright and Cypress</strong>.
+        `,
+      },
+      {
+        title: 'UI / UX',
+        description: `
+          Experience implementing <strong>responsive UIs</strong> and knowledge about <strong>UX design principles</strong>, worked with <strong>Figma and Adobe XD</strong>.
+          <br>
+          Strong experience with <strong>Tailwind CSS, Tailwind UI, Headless UI</strong> and related projects.
+        `,
+      },
+
+      {
+        title: 'DevOps / Cloud',
+        description: `
+          Familiarity with <strong>CI/CD tools</strong> such as <strong>AWS CodePipeline and Github actions</strong>.
+          <br>
+          Experience with AWS services like <strong>Lambda, EC2, Cloudfront and RDS</strong>.
+        `,
+      },
+      {
+        title: 'Miscellaneous',
+        description: `
+          Good understanding of build tools like <strong>Webpack and Vite</strong>.
+          <br>
+          Strong experience in <strong>event tracking with Mixpanel</strong>, wrote scaffolding and documentation to empower peers with the tool.
+          <br>
+          Experience in health monitoring and <strong>error tracking with Sentry</strong>.
         `,
       },
       // {
@@ -76,29 +88,32 @@ export default defineComponent({
 
     const workExperiences = [
       {
+        title: 'Frontend Engineer, Wunderite',
+        location: 'Boston, MA',
+        period: 'Feb 2022 - Current',
+        topics: [
+          'Lead the initiative to create and document a new component library using <strong>Storybook</strong>.'
+          + ' Organized the <strong>file structure</strong> and setup <strong>guidelines</strong> for creating new components.'
+          + ' Also automated <strong>visual regression testing</strong> using <strong>Chromatic</strong>.',
+          'Contributed to the <strong>documentation and establishment of patterns and standards</strong> for frontend code.',
+          'Researched and meticulously planned a <strong>Vue 2 to Vue 3 migration</strong>, accounting for every code and package change.',
+          'Structured and documented the process for <strong>E2E testing using Playwright</strong>, as well as <strong>unit testing with Jest</strong>',
+        ],
+      },
+      {
         title: 'Head of Frontend, EngagED',
         location: 'Curitiba, Brazil',
-        period: 'Aug 2019 — Mar 2020, Nov 2020 — Current',
+        period: 'Nov 2020 — Feb 2022',
         topics: [
-          'Replaced legacy frontend codebases with <strong>more maintainable, scalable and performant tech<strong>.',
+          'Coordinated and worked on the rewrite of <strong>Angular projects, migrating to Vue</strong>.',
           'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
-          'Hand-picked the technologies for the frontend stack. Focused on <strong>maintainability</strong>, a <strong>shallow learning curve</strong> and <strong>performance</strong>.',
           // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',
           // 'Added <strong>event tracking</strong> capabilities and <strong>boosted conversion</strong> in enrollment pages.',
         ],
       },
       {
-        title: 'Full Stack Developer, Leads2b',
-        location: 'Curitiba, Brazil',
-        period: 'Mar 2020 — Nov 2020',
-        topics: [
-          'Tasked with maintaining legacy codebases in Vue and PHP.',
-          'Responsible for structuring and development of a <strong>Component Library</strong> using <strong>Vue, Tailwind CSS, Storybook and full unit test coverage with Jest</strong>.',
-        ],
-      },
-      {
         title: 'Previous experiences',
-        period: '2017 - Mar 2020',
+        period: '2017 - Nov 2020',
         topics: [
           'Varied work including React, Angular, PHP, Java and JS/TS development.',
         ],

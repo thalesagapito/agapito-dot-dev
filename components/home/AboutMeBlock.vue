@@ -17,7 +17,7 @@ export default defineComponent({
     <h2 class="title">
       About me
     </h2>
-    <decorative-box>
+    <ReusableDecorativeBox>
       <p class="prose">
         I'm {{ currentAge }} years old and have been programming since I was 15.
         <br>
@@ -41,13 +41,13 @@ export default defineComponent({
           <small>cool album!</small>
         </div>
       </div>
-    </decorative-box>
+    </ReusableDecorativeBox>
   </section>
 </template>
 
 <style lang="postcss" scoped>
 section {
-  .decorative-box {
+  .ReusableDecorativeBox {
     .interests {
       @apply w-full relative h-36 mt-8 mb-4;
 

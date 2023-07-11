@@ -1,14 +1,9 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
-
 <template>
   <section>
     <h2 class="title">
       My work
     </h2>
-    <decorative-box>
+    <ReusableDecorativeBox>
       <div class="prose prose-orange">
         Even though I'm (mostly) a Frontend Engineer, I have been known to work with varied technologies when needed.
         <br>
@@ -84,14 +79,14 @@ export default defineComponent({})
         </ul>
       </div>
 
-      <decorative-asterisks />
-    </decorative-box>
+      <ReusableDecorativeAsterisks />
+    </ReusableDecorativeBox>
   </section>
 </template>
 
 <style lang="postcss" scoped>
 section {
-  .decorative-box {
+  .ReusableDecorativeBox {
     .list-title {
       @apply prose-lg flex justify-start items-center pb-1;
       .icons {

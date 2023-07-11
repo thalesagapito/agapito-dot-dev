@@ -1,11 +1,6 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
-
 <template>
   <section>
-    <decorative-box>
+    <ReusableDecorativeBox>
       <p class="prose prose-orange">
         <span class="large">Hi,</span>
         my name is Thales Agapito, and I'm a
@@ -18,7 +13,7 @@ export default defineComponent({})
           right here.
         </router-link>
       </p>
-    </decorative-box>
+    </ReusableDecorativeBox>
   </section>
 </template>
 

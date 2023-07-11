@@ -1,17 +1,11 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
-
 <template>
   <div class="wrapper">
-    <title-block />
-    <summary-block />
-    <about-me-block />
-    <my-work-block />
-    <my-projects-block />
-    <contact-me-block />
-    <!-- <pixel-popup /> -->
+    <HomeTitleBlock />
+    <HomeSummaryBlock />
+    <HomeAboutMeBlock />
+    <HomeMyWorkBlock />
+    <HomeMyProjectsBlock />
+    <HomeContactMeBlock />
   </div>
 </template>
 

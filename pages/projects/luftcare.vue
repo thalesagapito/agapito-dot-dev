@@ -1,13 +1,8 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
-
 <template>
   <floating-back-button />
   <div class="wrapper">
     <h1>Luftcare</h1>
-    <decorative-box>
+    <ReusableDecorativeBox>
       <h2>What is it?</h2>
       <p>
         <strong>Luftcare</strong> is the name of a project I started with a team at the <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener noreferrer">2018 NASA Space Apps Hackathon</a>.
@@ -176,8 +171,8 @@ export default defineComponent({})
         I gained a lot of experience and much of what I learned was useful later on.
       </p>
 
-      <decorative-asterisks />
-    </decorative-box>
+      <ReusableDecorativeAsterisks />
+    </ReusableDecorativeBox>
   </div>
 </template>
 

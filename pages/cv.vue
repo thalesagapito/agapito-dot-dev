@@ -92,12 +92,13 @@ export default defineComponent({
         location: 'Boston, MA',
         period: 'Feb 2022 - Current',
         topics: [
-          'Lead the initiative to create and document a new component library using <strong>Storybook</strong>.'
-          + ' Organized the <strong>file structure</strong> and setup <strong>guidelines</strong> for creating new components.'
-          + ' Also automated <strong>visual regression testing</strong> using <strong>Chromatic</strong>.',
-          'Contributed to the <strong>documentation and establishment of patterns and standards</strong> for frontend code.',
+          `Lead the initiative to create and document a new component library using <strong>Storybook</strong>.
+           Organized the <strong>file structure</strong> and setup <strong>guidelines</strong> for creating new components.
+           Also automated <strong>visual regression testing</strong> using <strong>Chromatic</strong>.`,
+          '<strong>Cut main app load time in half</strong>. Also decreased main app bundle size by <strong>~50%</strong> using a variety of methods, like <strong>code-splitting</strong>, dropping unused packages, etc.',
           'Researched and meticulously planned a <strong>Vue 2 to Vue 3 migration</strong>, accounting for every code and package change.',
-          'Structured and documented the process for <strong>E2E testing using Playwright</strong>, as well as <strong>unit testing with Jest</strong>',
+          'Contributed to the <strong>documentation and establishment of patterns and standards</strong> for frontend code.',
+          'Structured and documented the process for <strong>E2E testing using Playwright</strong>, as well as <strong>unit testing with Jest</strong>.',
         ],
       },
       {

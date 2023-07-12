@@ -77,7 +77,7 @@ section {
         @apply flex justify-start h-7 ml-1;
 
         a {
-          @apply flex flex-col items-center text-xs no-underline text-gray-800;
+          @apply flex flex-col items-center text-xs no-underline text-stone-800;
           img {
             @apply h-full my-0 mx-2;
           }

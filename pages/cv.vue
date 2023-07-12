@@ -233,9 +233,9 @@ const otherExperiences = [
   section {
     @apply max-w-none my-0;
     .section-title {
-      @apply relative text-2xl mt-2 mb-6 uppercase font-semibold text-gray-700 tracking-widest;
+      @apply relative text-2xl mt-2 mb-6 uppercase font-semibold text-stone-700 tracking-widest;
       &::after {
-        @apply h-1 w-12 absolute left-0 bottom-0 -mb-2 ml-1 bg-gray-600;
+        @apply h-1 w-12 absolute left-0 bottom-0 -mb-2 ml-1 bg-stone-600;
         content: '';
       }
     }
@@ -245,10 +245,10 @@ const otherExperiences = [
     @apply flex justify-between items-center border-b pt-10 pb-4;
     grid-area: header;
     h1 {
-      @apply text-gray-800 font-medium uppercase text-5xl tracking-widest;
+      @apply text-stone-800 font-medium uppercase text-5xl tracking-widest;
     }
     h2 {
-      @apply text-gray-500 text-xl pt-4 tracking-wide;
+      @apply text-stone-500 text-xl pt-4 tracking-wide;
     }
     .contact {
       @apply flex flex-col justify-center items-end w-full print:text-sm;
@@ -282,10 +282,10 @@ const otherExperiences = [
     dl {
       @apply prose print:prose-sm pt-2;
       dt {
-        @apply text-gray-800 uppercase font-bold mt-2;
+        @apply text-stone-800 uppercase font-bold mt-2;
       }
       dd a {
-        @apply text-gray-600 no-underline;
+        @apply text-stone-600 no-underline;
       }
     }
   }
@@ -318,7 +318,7 @@ const otherExperiences = [
         grid-area: location;
       }
       .period {
-        @apply font-medium text-gray-500 italic text-sm;
+        @apply font-medium text-stone-500 italic text-sm;
         grid-area: period;
       }
       .topics {

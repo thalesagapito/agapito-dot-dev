@@ -196,7 +196,7 @@ useHead({ title: 'Luftcare' })
     @apply w-full flex flex-col items-center;
     img {
       @apply mx-auto mb-4 border-2 border-black rounded;
-      box-shadow: 6px 6px 0 theme('colors.gray.700');
+      box-shadow: 6px 6px 0 theme('colors.stone.700');
       &.flutter {
         @apply rounded-3xl;
       }

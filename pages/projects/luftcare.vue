@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useHead({ title: 'Luftcare' })
+</script>
+
 <template>
   <floating-back-button />
   <div class="wrapper">

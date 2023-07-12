@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useHead({ titleTemplate: '%s - Thales Agapito' })
+</script>
+
 <template>
   <div>
     <NuxtPage />

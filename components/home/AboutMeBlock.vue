@@ -1,15 +1,8 @@
-<script lang="ts">
+<script setup lang="ts">
 import dayjs from 'dayjs'
-import { computed, defineComponent } from 'vue'
 
-export default defineComponent({
-  setup() {
-    const birthDate = dayjs('09/02/1998')
-    const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
-
-    return { currentAge }
-  },
-})
+const birthDate = dayjs('09/02/1998')
+const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
 </script>
 
 <template>

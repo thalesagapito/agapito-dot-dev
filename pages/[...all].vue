@@ -1,4 +1,5 @@
-<script lang="ts" setup>
+<script setup lang="ts">
+useHead({ title: 'Page not found' })
 </script>
 
 <template>

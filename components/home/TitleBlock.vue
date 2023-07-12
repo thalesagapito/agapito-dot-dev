@@ -1,10 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-})
-</script>
-
 <template>
   <div class="title-block-wrapper">
     <img

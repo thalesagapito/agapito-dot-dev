@@ -1,97 +1,95 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+useHead({ title: 'CV' })
 
-export default defineComponent({
-  setup() {
-    const contactInfos = [
-      {
-        key: 'github',
-        text: 'thalesagapito',
-        anchor: { href: 'https://github.com/thalesagapito', rel: 'noopener noreferrer', target: '_blank' },
-        image: { src: '/images/tech/github.svg', alt: 'Github logo.' },
-      },
-      {
-        key: 'website',
-        text: 'agapito.dev',
-        anchor: { href: 'https://agapito.dev', rel: 'noopener noreferrer', target: '_blank' },
-        image: { src: '/images/tech/globe.svg', alt: 'Globe icon.' },
-      },
-      {
-        key: 'email',
-        text: 'thales@agapito.dev',
-        anchor: { href: 'mailto:thales@agapito.dev' },
-        image: { src: '/images/tech/email.svg', alt: 'Email icon.' },
-      },
-    ]
-    const about = `
+const contactInfos = [
+  {
+    key: 'github',
+    text: 'thalesagapito',
+    anchor: { href: 'https://github.com/thalesagapito', rel: 'noopener noreferrer', target: '_blank' },
+    image: { src: '/images/tech/github.svg', alt: 'Github logo.' },
+  },
+  {
+    key: 'website',
+    text: 'agapito.dev',
+    anchor: { href: 'https://agapito.dev', rel: 'noopener noreferrer', target: '_blank' },
+    image: { src: '/images/tech/globe.svg', alt: 'Globe icon.' },
+  },
+  {
+    key: 'email',
+    text: 'thales@agapito.dev',
+    anchor: { href: 'mailto:thales@agapito.dev' },
+    image: { src: '/images/tech/email.svg', alt: 'Email icon.' },
+  },
+]
+const about = `
       Over 6 years of development experience, passionate about writing beautiful and clean code.
       Problem solver with a proactive attitude, always willing to go the extra mile.
       Contributed to many open source projects, designed and developed complete architectures for multiple applications.
     `
 
-    const skills = [
-      {
-        title: 'Vue / Nuxt',
-        description: `
+const skills = [
+  {
+    title: 'Vue / Nuxt',
+    description: `
           In-depth knowledge of Vue 2/3 and Nuxt, mostly using <strong>Typescript</strong>.
           <br>
           Very familiar with many of the ecosystem's libraries, like <strong>Pinia, Vue Router, VueUse</strong>, etc.
         `,
-      },
-      {
-        title: 'Testing',
-        description: `
+  },
+  {
+    title: 'Testing',
+    description: `
           Strong experience in <strong>unit testing with Jest and Vue Testing Library</strong>.
           Strong experience with <strong>E2E testing with Playwright and Cypress</strong>.
         `,
-      },
-      {
-        title: 'UI / UX',
-        description: `
+  },
+  {
+    title: 'UI / UX',
+    description: `
           Experience implementing <strong>responsive UIs</strong> and knowledge about <strong>UX design principles</strong>, worked with <strong>Figma and Adobe XD</strong>.
           <br>
           Strong experience with <strong>Tailwind CSS, Tailwind UI, Headless UI</strong> and related projects.
         `,
-      },
+  },
 
-      {
-        title: 'DevOps / Cloud',
-        description: `
+  {
+    title: 'DevOps / Cloud',
+    description: `
           Familiarity with <strong>CI/CD tools</strong> such as <strong>AWS CodePipeline and Github actions</strong>.
           <br>
           Experience with AWS services like <strong>Lambda, EC2, Cloudfront and RDS</strong>.
         `,
-      },
-      {
-        title: 'Miscellaneous',
-        description: `
+  },
+  {
+    title: 'Miscellaneous',
+    description: `
           Good understanding of build tools like <strong>Webpack and Vite</strong>.
           <br>
           Strong experience in <strong>event tracking with Mixpanel</strong>, wrote scaffolding and documentation to empower peers with the tool.
           <br>
           Experience in health monitoring and <strong>error tracking with Sentry</strong>.
         `,
-      },
-      // {
-      //   title: 'Backend',
-      //   description: `
-      //     Even though I'm currently a frontend engineer, <strong>I've worked as full stack developer before</strong>
-      //     and developed multiple APIs. From authentication to payments, both <strong>REST</strong> and <strong>GraphQL</strong>.
-      //   `,
-      // },
-    ]
+  },
+  // {
+  //   title: 'Backend',
+  //   description: `
+  //     Even though I'm currently a frontend engineer, <strong>I've worked as full stack developer before</strong>
+  //     and developed multiple APIs. From authentication to payments, both <strong>REST</strong> and <strong>GraphQL</strong>.
+  //   `,
+  // },
+]
 
-    const languages = [
-      { label: '🇺🇸', level: 'fluent' },
-      { label: '🇧🇷', level: 'native' },
-    ]
+const languages = [
+  { label: '🇺🇸', level: 'fluent' },
+  { label: '🇧🇷', level: 'native' },
+]
 
-    const workExperiences = [
-      {
-        title: 'Frontend Engineer, Wunderite',
-        location: 'Boston, MA',
-        period: 'Feb 2022 - Current',
-        topics: [
+const workExperiences = [
+  {
+    title: 'Frontend Engineer, Wunderite',
+    location: 'Boston, MA',
+    period: 'Feb 2022 - Current',
+    topics: [
           `Lead the initiative to create and document a new component library using <strong>Storybook</strong>.
            Organized the <strong>file structure</strong> and setup <strong>guidelines</strong> for creating new components.
            Also automated <strong>visual regression testing</strong> using <strong>Chromatic</strong>.`,
@@ -99,58 +97,47 @@ export default defineComponent({
           'Researched and meticulously planned a <strong>Vue 2 to Vue 3 migration</strong>, accounting for every code and package change.',
           'Contributed to the <strong>documentation and establishment of patterns and standards</strong> for frontend code.',
           'Structured and documented the process for <strong>E2E testing using Playwright</strong>, as well as <strong>unit testing with Jest</strong>.',
-        ],
-      },
-      {
-        title: 'Head of Frontend, EngagED',
-        location: 'Curitiba, Brazil',
-        period: 'Nov 2020 — Feb 2022',
-        topics: [
-          'Coordinated and worked on the rewrite of <strong>Angular projects, migrating to Vue</strong>.',
-          'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
-          // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',
-          // 'Added <strong>event tracking</strong> capabilities and <strong>boosted conversion</strong> in enrollment pages.',
-        ],
-      },
-      {
-        title: 'Previous experiences',
-        period: '2017 - Nov 2020',
-        topics: [
-          'Varied work including React, Angular, PHP, Java and JS/TS development.',
-        ],
-      },
-    ]
-
-    const otherExperiences = [
-      {
-        title: 'NASA Space Apps Hackathon 2018 Winner',
-        location: 'Curitiba, Brazil',
-        topics: [
-          'Developed a <strong>local award winning</strong> and <strong>global nominee</strong> solution. Using <strong>Nativescript-Vue</strong>, I created a PoC app for asthma patients to monitor their treatment.',
-          'The project evolved into a tool for doctors to create and evaluate health questionnaires. It was discontinued in 2020 due to health concerns regarding research during the pandemic.',
-        ],
-      },
-      {
-        title: 'Strassen - Sneaker marketplace',
-        location: 'Curitiba, Brazil',
-        topics: [
-          'Using <strong>Prisma and Nexus GraphQL</strong>, I created an API for management and buy/sell operations for a sneaker marketplace.',
-          'Using <strong>Vue and TypeScript</strong>, I developed an admin dashboard and a public website for users to buy and sell their sneakers.',
-          'The project uses many AWS services, such as <strong>S3, RDS, Cloudfront CDN and Lambda Functions</strong>.',
-        ],
-      },
-    ]
-
-    return {
-      contactInfos,
-      about,
-      skills,
-      languages,
-      workExperiences,
-      otherExperiences,
-    }
+    ],
   },
-})
+  {
+    title: 'Head of Frontend, EngagED',
+    location: 'Curitiba, Brazil',
+    period: 'Nov 2020 — Feb 2022',
+    topics: [
+      'Coordinated and worked on the rewrite of <strong>Angular projects, migrating to Vue</strong>.',
+      'Revamped the devops process using multiple AWS services to <strong>reduce costs</strong>, <strong>increase availability</strong> and <strong>improve performance under heavy loads</strong>.',
+      // 'Implemented <strong>SSR</strong> (server side rendering) for better <strong>SEO</strong> and <strong>page load speed</strong>.',
+      // 'Added <strong>event tracking</strong> capabilities and <strong>boosted conversion</strong> in enrollment pages.',
+    ],
+  },
+  {
+    title: 'Previous experiences',
+    period: '2017 - Nov 2020',
+    topics: [
+      'Varied work including React, Angular, PHP, Java and JS/TS development.',
+    ],
+  },
+]
+
+const otherExperiences = [
+  {
+    title: 'NASA Space Apps Hackathon 2018 Winner',
+    location: 'Curitiba, Brazil',
+    topics: [
+      'Developed a <strong>local award winning</strong> and <strong>global nominee</strong> solution. Using <strong>Nativescript-Vue</strong>, I created a PoC app for asthma patients to monitor their treatment.',
+      'The project evolved into a tool for doctors to create and evaluate health questionnaires. It was discontinued in 2020 due to health concerns regarding research during the pandemic.',
+    ],
+  },
+  {
+    title: 'Strassen - Sneaker marketplace',
+    location: 'Curitiba, Brazil',
+    topics: [
+      'Using <strong>Prisma and Nexus GraphQL</strong>, I created an API for management and buy/sell operations for a sneaker marketplace.',
+      'Using <strong>Vue and TypeScript</strong>, I developed an admin dashboard and a public website for users to buy and sell their sneakers.',
+      'The project uses many AWS services, such as <strong>S3, RDS, Cloudfront CDN and Lambda Functions</strong>.',
+    ],
+  },
+]
 </script>
 
 <template>

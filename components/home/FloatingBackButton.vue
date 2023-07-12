@@ -1,10 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-})
-</script>
-
 <template>
   <router-link to="/" class="floating-back-button">
     <span class="arrow">◀</span>

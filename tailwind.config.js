@@ -8,7 +8,6 @@ module.exports = {
       },
       container: {
         center: true,
-
         padding: {
           'DEFAULT': '1rem',
           'sm': '2rem',
@@ -17,6 +16,14 @@ module.exports = {
           '2xl': '5rem',
         },
       },
+      typography: theme => ({
+        orange: {
+          css: {
+            '--tw-prose-links': theme.colors.orange[700],
+            '--tw-prose-invert-links': theme.colors.orange[500],
+          },
+        },
+      }),
     },
   },
   plugins: [

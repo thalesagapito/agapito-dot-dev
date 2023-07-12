@@ -89,10 +89,10 @@ const skills = [
   // },
 ]
 
-const languages = [
-  { label: '🇺🇸', level: 'fluent' },
-  { label: '🇧🇷', level: 'native' },
-]
+// const languages = [
+//   { label: '🇺🇸', level: 'fluent' },
+//   { label: '🇧🇷', level: 'native' },
+// ]
 
 const workExperiences = [
   {

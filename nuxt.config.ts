@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/image',
   ],
+  image: {
+    quality: 85,
+  },
 })

@@ -34,6 +34,7 @@ useHead({
       <div class="flex items-center">
         <div class="image-container">
           <nuxt-img
+            width="186"
             class="w-2/3"
             src="/images/luftcare/inhaler.jpeg"
             alt="Our smart inhaler prototype."
@@ -42,6 +43,7 @@ useHead({
         </div>
         <div class="image-container">
           <nuxt-img
+            width="186"
             class="w-2/3"
             src="/images/luftcare/app-nativescript.png"
             alt="Our PoC app."
@@ -66,6 +68,7 @@ useHead({
       </p>
       <div class="image-container -mt-4">
         <nuxt-img
+          width="377"
           class="w-2/3"
           src="/images/luftcare/stack.jpeg"
           alt="How our tech stack evolved over time, a Nativescript logo with an arrow pointing to three more logos, Vue, Flutter and GraphQL."
@@ -128,6 +131,7 @@ useHead({
 
       <div class="image-container -mt-4">
         <nuxt-img
+          width="519"
           class="w-11/12"
           src="/images/luftcare/dashboard.jpg"
           alt="Our dashboard. A page containing a sidebar with multiple links, a large line graph and a table."
@@ -154,6 +158,7 @@ useHead({
       <div class="flex items-start -mt-4">
         <div class="image-container">
           <nuxt-img
+            width="186"
             class="w-2/3 flutter"
             src="/images/luftcare/app-flutter-1.jpg"
             alt="Home page with questionnaires listing."
@@ -162,6 +167,7 @@ useHead({
         </div>
         <div class="image-container">
           <nuxt-img
+            width="186"
             class="w-2/3 flutter"
             src="/images/luftcare/app-flutter-2.jpg"
             alt="Questionnaire answering page."

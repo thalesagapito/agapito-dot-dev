@@ -23,13 +23,13 @@ const currentAge = computed(() => dayjs().diff(birthDate, 'years'))
 
       <div class="interests">
         <div class="polaroid sneaker">
-          <nuxt-img src="/images/sneaker.jpeg" alt="A pair of white Nike Blazer sneakers." />
+          <nuxt-img width="134" src="/images/sneaker.jpeg" alt="A pair of white Nike Blazer sneakers." />
           <span>blazers</span>
           <small>cool shoes!</small>
         </div>
 
         <div class="polaroid rap">
-          <nuxt-img src="/images/rap.jpeg" alt="Album cover of the critically acclaimed Piñata by Freddie Gibbs." />
+          <nuxt-img width="125" src="/images/rap.jpeg" alt="Album cover of the critically acclaimed Piñata by Freddie Gibbs." />
           <span>piñata</span>
           <small>cool album!</small>
         </div>

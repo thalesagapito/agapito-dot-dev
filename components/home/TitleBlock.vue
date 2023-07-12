@@ -1,12 +1,6 @@
 <template>
   <div class="title-block-wrapper">
-    <img
-      width="128"
-      height="144"
-      src="/images/me.jpeg"
-      alt="A picture of myself."
-      class="image"
-    >
+    <nuxt-img src="/images/me.jpeg" alt="A picture of myself." class="image" />
 
     <div class="flex-flex-col">
       <h1 class="name">

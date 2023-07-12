@@ -6,5 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxtjs/robots',
     '@vueuse/nuxt',
+    '@nuxt/image',
   ],
 })

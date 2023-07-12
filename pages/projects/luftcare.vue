@@ -33,19 +33,19 @@ useHead({
 
       <div class="flex items-center">
         <div class="image-container">
-          <img
+          <nuxt-img
             class="w-2/3"
             src="/images/luftcare/inhaler.jpeg"
             alt="Our smart inhaler prototype."
-          >
+          />
           <small>Our smart inhaler prototype.</small>
         </div>
         <div class="image-container">
-          <img
+          <nuxt-img
             class="w-2/3"
             src="/images/luftcare/app-nativescript.png"
             alt="Our PoC app."
-          >
+          />
           <small>Our PoC app.</small>
         </div>
       </div>
@@ -65,11 +65,11 @@ useHead({
         Below I explore each decision and my experience with all the tech.
       </p>
       <div class="image-container -mt-4">
-        <img
+        <nuxt-img
           class="w-2/3"
           src="/images/luftcare/stack.jpeg"
           alt="How our tech stack evolved over time, a Nativescript logo with an arrow pointing to three more logos, Vue, Flutter and GraphQL."
-        >
+        />
         <small>How our tech stack evolved.</small>
       </div>
 
@@ -127,11 +127,11 @@ useHead({
       </ul>
 
       <div class="image-container -mt-4">
-        <img
+        <nuxt-img
           class="w-11/12"
           src="/images/luftcare/dashboard.jpg"
           alt="Our dashboard. A page containing a sidebar with multiple links, a large line graph and a table."
-        >
+        />
         <small>Our dashboard.</small>
       </div>
 
@@ -153,19 +153,19 @@ useHead({
 
       <div class="flex items-start -mt-4">
         <div class="image-container">
-          <img
+          <nuxt-img
             class="w-2/3 flutter"
             src="/images/luftcare/app-flutter-1.jpg"
             alt="Home page with questionnaires listing."
-          >
+          />
           <small>Home page.</small>
         </div>
         <div class="image-container">
-          <img
+          <nuxt-img
             class="w-2/3 flutter"
             src="/images/luftcare/app-flutter-2.jpg"
             alt="Questionnaire answering page."
-          >
+          />
           <small>Questionnaire answering page.</small>
         </div>
       </div>

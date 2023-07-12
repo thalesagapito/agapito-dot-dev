@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/robots',
     '@vueuse/nuxt',
   ],
 })

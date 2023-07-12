@@ -1,5 +1,13 @@
 <script setup lang="ts">
-useHead({ title: 'Page not found' })
+useHead({
+  title: 'Page not found',
+  meta: [
+    {
+      name: 'description',
+      content: 'Oops! It seems like you\'ve ventured into uncharted territory.',
+    },
+  ],
+})
 </script>
 
 <template>

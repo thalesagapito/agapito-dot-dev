@@ -1,5 +1,17 @@
 <script setup lang="ts">
-useHead({ titleTemplate: '%s - Thales Agapito' })
+useHead({
+  titleTemplate: '%s - Thales Agapito',
+  htmlAttrs: {
+    lang: 'en',
+  },
+  meta: [
+    {
+      name: 'description',
+      content: `Thales Agapito: Frontend Engineer & Vue Specialist with 5+ years of experience.
+      Crafting delightful web experiences with a touch of Vue magic.`,
+    },
+  ],
+})
 </script>
 
 <template>

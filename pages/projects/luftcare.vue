@@ -1,5 +1,16 @@
 <script setup lang="ts">
-useHead({ title: 'Luftcare' })
+useHead({
+  title: 'Luftcare',
+  meta: [
+    {
+      name: 'description',
+      content: `Luftcare: A project born at the 2018 NASA Space Apps Hackathon.
+      Our team created an app for asthma patients, incorporating a smart inhaler prototype.
+      I developed a PoC app using Nativescript Vue.
+      Recognized as local winners and global nominees. 🥳`,
+    },
+  ],
+})
 </script>
 
 <template>

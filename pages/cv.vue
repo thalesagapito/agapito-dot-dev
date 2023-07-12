@@ -1,5 +1,15 @@
 <script setup lang="ts">
-useHead({ title: 'CV' })
+useHead({
+  title: 'CV',
+  meta: [
+    {
+      name: 'description',
+      content: `Explore Thales Agapito's detailed CV as a dedicated Frontend Engineer and Vue Specialist.
+      Gain insights into valuable skills, extensive experience, and a passion for crafting exceptional web solutions.
+      Discover the potential for collaborative success in web development.`,
+    },
+  ],
+})
 
 const contactInfos = [
   {

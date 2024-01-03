@@ -32,7 +32,7 @@ const contactInfos = [
   },
 ]
 const about = `
-      Over 6 years of development experience, passionate about writing beautiful and clean code.
+      Over 7 years of development experience, passionate about writing beautiful and clean code.
       Problem solver with a proactive attitude, always willing to go the extra mile.
       Contributed to many open source projects, designed and developed complete architectures for multiple applications.
     `

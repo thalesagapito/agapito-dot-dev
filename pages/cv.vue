@@ -107,6 +107,7 @@ const workExperiences = [
           'Researched and meticulously planned a <strong>Vue 2 to Vue 3 migration</strong>, accounting for every code and package change.',
           'Contributed to the <strong>documentation and establishment of patterns and standards</strong> for frontend code.',
           'Structured and documented the process for <strong>E2E testing using Playwright</strong>, as well as <strong>unit testing with Jest</strong>.',
+      // deprecated sass
     ],
   },
   {
@@ -399,7 +400,7 @@ const otherExperiences = [
 
 @screen print {
   .wrapper {
-    @apply px-0;
+    @apply px-0 shadow-none;
     grid-template-columns: 40fr 60fr;
     grid-template-areas:
       "header header"

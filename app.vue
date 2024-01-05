@@ -7,7 +7,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: `Thales Agapito: Frontend Engineer & Vue Specialist with 5+ years of experience.
+      content: `Thales Agapito: Frontend Engineer & Vue Specialist with 7+ years of experience.
       Crafting delightful web experiences with a touch of Vue magic.`,
     },
   ],

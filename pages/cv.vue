@@ -222,7 +222,7 @@ const otherExperiences = [
 
       <div v-for="{ title, location, topics } in otherExperiences" :key="title" class="experience">
         <h4 class="title" v-html="title" />
-        <span class="location" v-html="location" />
+        <span v-if="location" class="location" v-html="location" />
         <ul class="topics">
           <li v-for="topic in topics" :key="topic" class="other" v-html="topic" />
         </ul>
@@ -309,7 +309,7 @@ const otherExperiences = [
     @apply flex flex-col justify-start items-start py-6;
     grid-area: experiences;
     .experience {
-      @apply grid py-2 items-center prose print:prose-sm;
+      @apply grid py-2 items-center prose print:prose-sm w-full;
       grid-template-columns: auto 1fr auto;
       grid-template-areas:
         "title  .       location"
